@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (Do not expose API keys)
+.env
+.env.local
+.env.*.local
+
+# Uploads and local raw training dataset
+uploads/
+crop_images/
+*.log
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Old redundant root models (active multi-models are in /models)
+crop_model.onnx
+pretrained_model.onnx
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

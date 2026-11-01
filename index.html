@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriVision - AI Crop Disease Detection System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .pulse-ring {
+            animation: pulse-border 2s infinite;
+        }
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            70% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+    </style>
+</head>
+<body class="h-full text-slate-800 antialiased flex flex-col">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-md shadow-emerald-500/20">
+                        <i data-lucide="sprout" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xl font-bold bg-gradient-to-r from-emerald-800 to-teal-700 bg-clip-text text-transparent">AgriVision</span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 -mt-1 hidden sm:block">Smart Crop Health & Diagnostics</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1">
+                    <button onclick="switchTab('detector')" id="nav-detector" class="px-3.5 py-2 rounded-lg text-sm font-medium text-emerald-700 bg-emerald-50 transition-colors flex items-center space-x-2">
+                        <i data-lucide="scan-line" class="w-4 h-4"></i>
+                        <span>Disease Detector</span>
+                    </button>
+                    <button onclick="switchTab('crops')" id="nav-crops" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-700 hover:bg-slate-50 transition-colors flex items-center space-x-2">
+                        <i data-lucide="grid" class="w-4 h-4"></i>
+                        <span>Supported Crops (13)</span>
+                    </button>
+                    <button onclick="switchTab('assistant')" id="nav-assistant" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-700 hover:bg-slate-50 transition-colors flex items-center space-x-2">
+                        <i data-lucide="bot" class="w-4 h-4"></i>
+                        <span>Ask AI Assistant</span>
+                    </button>
+                    <button onclick="switchTab('about')" id="nav-about" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-700 hover:bg-slate-50 transition-colors flex items-center space-x-2">
+                        <i data-lucide="info" class="w-4 h-4"></i>
+                        <span>About</span>
+                    </button>
+                </nav>
+
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Row -->
+        <div class="md:hidden border-t border-slate-200 bg-slate-50/80 px-2 py-1.5 flex justify-around">
+            <button onclick="switchTab('detector')" id="mob-nav-detector" class="p-2 text-emerald-700 text-xs flex flex-col items-center font-medium">
+                <i data-lucide="scan-line" class="w-5 h-5 mb-0.5"></i> Detector
+            </button>
+            <button onclick="switchTab('crops')" id="mob-nav-crops" class="p-2 text-slate-600 text-xs flex flex-col items-center font-medium">
+                <i data-lucide="grid" class="w-5 h-5 mb-0.5"></i> Crops
+            </button>
+            <button onclick="switchTab('assistant')" id="mob-nav-assistant" class="p-2 text-slate-600 text-xs flex flex-col items-center font-medium">
+                <i data-lucide="bot" class="w-5 h-5 mb-0.5"></i> Ask AI
+            </button>
+            <button onclick="switchTab('about')" id="mob-nav-about" class="p-2 text-slate-600 text-xs flex flex-col items-center font-medium">
+                <i data-lucide="info" class="w-5 h-5 mb-0.5"></i> About
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- TAB 1: DISEASE DETECTOR -->
+        <section id="tab-detector" class="space-y-6">
+            
+            <!-- Hero Banner -->
+            <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute right-0 top-0 bottom-0 opacity-10 pointer-events-none flex items-center pr-10">
+                    <i data-lucide="scan" class="w-96 h-96"></i>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Detect Crop Diseases in Seconds</h1>
+                    <p class="mt-2 text-emerald-100 text-sm sm:text-base font-normal">
+                        Upload a photo of any affected plant leaf. Our computer vision model classifies pathogens across 13 staple crops, and AgriVision AI provides actionable organic remedies and dosages.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main Detector Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                
+                <!-- Left Column: Upload & Controls (5 cols) -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                        
+                        <!-- Crop Selector Dropdown -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <label for="cropSelect" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                                    1. Target Crop Mode
+                                </label>
+                                <span class="text-[11px] text-emerald-700 font-medium">Strict Crop Isolation</span>
+                            </div>
+                            <div class="relative">
+                                <select id="cropSelect" class="w-full bg-slate-50 border border-slate-300 text-slate-800 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none appearance-none cursor-pointer">
+                                    <option value="" disabled selected>-- Select a Crop --</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="chickpea">Chickpea</option>
+                                    <option value="corn">Corn / Maize</option>
+                                    <option value="cotton">Cotton</option>
+                                    <option value="onion">Onion</option>
+                                    <option value="pepper">Pepper (Bell Pepper)</option>
+                                    <option value="potato">Potato</option>
+                                    <option value="rice">Rice (Paddy)</option>
+                                    <option value="rose">Rose</option>
+                                    <option value="soybean">Soybean</option>
+                                    <option value="sugarcane">Sugarcane</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="wheat">Wheat</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-slate-500">
+                                    <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dropzone Area -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+                                2. Upload Crop Photo
+                            </label>
+                            
+                            <div id="dropzone" class="border-2 border-dashed border-emerald-300 hover:border-emerald-500 bg-emerald-50/40 hover:bg-emerald-50 rounded-2xl p-6 text-center cursor-pointer transition-all duration-200 group relative">
+                                <input type="file" id="fileInput" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" onchange="handleFileSelect(event)">
+                                
+                                <div id="uploadPlaceholder" class="space-y-3">
+                                    <div class="w-14 h-14 bg-white rounded-full shadow-sm border border-emerald-100 flex items-center justify-center mx-auto text-emerald-600 group-hover:scale-110 transition-transform">
+                                        <i data-lucide="upload-cloud" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            <span class="text-emerald-700 font-semibold">Click to upload</span> or drag and drop leaf photo
+                                        </p>
+                                        <p class="text-xs text-slate-400 mt-1">Supports PNG, JPG, WEBP up to 15MB</p>
+                                    </div>
+                                </div>
+
+                                <!-- Image Preview Container -->
+                                <div id="previewContainer" class="hidden relative">
+                                    <img id="imagePreview" src="" alt="Crop Preview" class="max-h-56 mx-auto rounded-xl shadow-md border border-slate-200 object-cover">
+                                    <button type="button" onclick="removeImage(event)" class="absolute top-2 right-2 bg-slate-900/70 hover:bg-slate-900 text-white rounded-full p-1.5 backdrop-blur-sm z-20">
+                                        <i data-lucide="x" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Sample Preset Leaves -->
+                        
+                        <!-- Scan Action Button -->
+                        <button id="analyzeBtn" onclick="runAnalysis()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 transition flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            <span>Detect Disease & Analyze</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Results & Diagnosis Output (7 cols) -->
+                <div class="lg:col-span-7">
+                    
+                    <!-- Default Empty State -->
+                    <div id="resultEmptyState" class="bg-white rounded-2xl border border-slate-200 p-10 text-center h-full flex flex-col items-center justify-center min-h-[420px]">
+                        <div class="w-20 h-20 bg-slate-100 text-slate-400 rounded-2xl flex items-center justify-center mb-4">
+                            <i data-lucide="file-search" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-800">Awaiting Crop Image</h3>
+                        <p class="text-sm text-slate-500 max-w-sm mt-1">
+                            Upload a leaf photo on the left or click a sample to run neural inference with expert AI agronomy recommendations.
+                        </p>
+                    </div>
+
+                    <!-- Processing / Loading State (Clean Simple Spinner) -->
+                    <div id="resultLoadingState" class="hidden bg-white rounded-2xl border border-slate-200 p-10 text-center h-full flex flex-col items-center justify-center min-h-[420px]">
+                        <div class="w-12 h-12 border-4 border-slate-200 border-t-emerald-600 rounded-full animate-spin"></div>
+                    </div>
+
+                    <!-- Actual Analysis Result Panel -->
+                    <div id="resultPanel" class="hidden bg-white rounded-2xl border border-slate-200 p-6 space-y-6 shadow-sm">
+                        
+                        <!-- Result Header Badge & Title -->
+                        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-100 pb-5">
+                            <div>
+                                <div class="flex items-center space-x-2">
+                                    <span id="resCropBadge" class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                                        Garlic
+                                    </span>
+                                    <span id="resStatusBadge" class="bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center space-x-1">
+                                        <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+                                        <span id="resStatusText">Healthy Crop</span>
+                                    </span>
+                                </div>
+                                <h2 id="resDiseaseName" class="text-2xl font-bold text-slate-900 mt-2">
+                                    Healthy
+                                </h2>
+                                <p id="resSciName" class="text-xs text-slate-500 italic mt-0.5">Inference: 10ms | Status: Healthy</p>
+                            </div>
+
+                            <!-- Confidence Score Gauge -->
+                            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-center min-w-[110px]">
+                                <span class="text-2xl font-extrabold text-emerald-700" id="resConfidence">78.4%</span>
+                                <p class="text-[11px] font-semibold text-emerald-800">AI Confidence</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Tabs for Diagnosis Breakdown -->
+                        <div>
+                            <div class="grid grid-cols-3 gap-2 bg-slate-100 p-1 rounded-xl text-xs font-semibold">
+                                <button onclick="showDiagTab('symptoms')" id="btnDiagSymptoms" class="py-2 rounded-lg bg-white text-slate-800 shadow-sm transition">Symptoms</button>
+                                <button onclick="showDiagTab('remedies')" id="btnDiagRemedies" class="py-2 rounded-lg text-slate-600 hover:text-slate-800 transition">Remedies & Care</button>
+                                <button onclick="showDiagTab('prevention')" id="btnDiagPrevention" class="py-2 rounded-lg text-slate-600 hover:text-slate-800 transition">Prevention</button>
+                            </div>
+
+                            <!-- Tab Content: Symptoms -->
+                            <div id="diagTabSymptoms" class="mt-4 space-y-3">
+                                <div class="bg-amber-50/70 border border-amber-200/60 rounded-xl p-4 text-xs sm:text-sm text-amber-900 leading-relaxed">
+                                    <p class="font-semibold text-amber-950 mb-1 flex items-center space-x-1.5">
+                                        <i data-lucide="info" class="w-4 h-4 text-amber-600"></i>
+                                        <span>Key Visual Diagnostic Indicators:</span>
+                                    </p>
+                                    <ul id="resSymptomsList" class="list-disc list-inside space-y-1 text-slate-700 mt-2">
+                                        <li>Foliage displays healthy vegetative vigor.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Tab Content: Remedies & Treatment -->
+                            <div id="diagTabRemedies" class="mt-4 hidden space-y-4">
+                                <!-- Clinical Action Summary Card -->
+                                <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-4 shadow-sm">
+                                    <h4 class="text-xs font-bold text-emerald-950 uppercase tracking-wider mb-1.5 flex items-center space-x-1.5">
+                                        <i data-lucide="clipboard-check" class="w-4 h-4 text-emerald-700"></i>
+                                        <span>Agronomic Treatment Protocol & Field Action:</span>
+                                    </h4>
+                                    <p id="resTreatmentText" class="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+                                        Apply recommended treatment.
+                                    </p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <!-- Organic & Bio Solutions -->
+                                    <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4 shadow-sm">
+                                        <h4 class="text-xs font-bold text-emerald-900 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+                                            <i data-lucide="leaf" class="w-4 h-4 text-emerald-600"></i>
+                                            <span>Organic & Biological Solutions</span>
+                                        </h4>
+                                        <ul id="resOrganicRemedies" class="text-xs text-slate-700 space-y-2 list-disc list-inside leading-relaxed">
+                                            <li>Cold-pressed Neem oil (5ml/L) spray every 7 days.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Chemical & Fungicide Treatment -->
+                                    <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4 shadow-sm">
+                                        <h4 class="text-xs font-bold text-blue-900 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+                                            <i data-lucide="flask-conical" class="w-4 h-4 text-blue-600"></i>
+                                            <span>Chemical Treatment & Spray Schedule</span>
+                                        </h4>
+                                        <ul id="resChemicalRemedies" class="text-xs text-slate-700 space-y-2 list-disc list-inside leading-relaxed">
+                                            <li>Apply recommended fungicide or fertilizer.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab Content: Prevention -->
+                            <div id="diagTabPrevention" class="mt-4 hidden space-y-3">
+                                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                                    <ul id="resPreventionList" class="text-xs sm:text-sm text-slate-700 space-y-2 list-disc list-inside">
+                                        <li>Practice crop rotation and drip irrigation.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Differential Diagnoses / Alternative Possibilities -->
+                        <div id="alternativesBlock" class="pt-2">
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-2">Alternative Possibilities (Differential Diagnosis):</span>
+                            <div id="resAlternativesList" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Action Bar: Ask AI Contextual Question -->
+                        <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                            <span class="text-xs text-slate-500">Need specific dosage, weather adjustments, or field spray guidance?</span>
+                            <button onclick="askAIAboutDisease()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-4 py-2 rounded-lg transition flex items-center space-x-1.5 shadow-sm">
+                                <i data-lucide="bot" class="w-4 h-4"></i>
+                                <span>Discuss Treatment with AI</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 2: SUPPORTED CROPS GRID -->
+        <section id="tab-crops" class="hidden space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Supported Crops Database (13 Crops)</h2>
+                    <p class="text-sm text-slate-500">AgriVision ML models are trained on 13 major agricultural crops with specialized disease and health conditions.</p>
+                </div>
+                
+                <!-- Search & Filter Filter -->
+                <div class="relative min-w-[260px]">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+                    <input type="text" id="cropSearchInput" onkeyup="filterCropsGrid()" placeholder="Search crops or pathogens..." class="w-full bg-white border border-slate-300 rounded-xl pl-9 pr-4 py-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+            </div>
+
+            <!-- Crops Grid Container (13 Supported Crops) -->
+            <div id="cropsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Javascript populates this grid dynamically -->
+            </div>
+        </section>
+
+        <!-- TAB 3: ASK AGRIVISION AI ASSISTANT (FULL WIDTH) -->
+        <section id="tab-assistant" class="hidden space-y-6">
+            
+            <!-- Assistant Hero Header Banner -->
+            <div class="bg-gradient-to-r from-emerald-900 via-teal-800 to-slate-900 rounded-2xl p-6 text-white shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="bot" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <h2 class="text-xl font-bold">AgriVision AI Assistant</h2>
+                            
+                        </div>
+                        <p class="text-xs sm:text-sm text-emerald-100/80 mt-0.5">
+                            Real-time  advisory for crop diseases, organic remedies, fungicide schedules, and soil nutrition.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Preset Prompts Row -->
+              
+            </div>
+
+            <!-- Full-Width Chat Box Area -->
+            <div class="w-full bg-white border border-slate-200 rounded-2xl flex flex-col overflow-hidden shadow-sm h-[620px]">
+                
+                <!-- Chat Header -->
+                <div class="px-6 py-3.5 border-b border-slate-200 bg-slate-50/80 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span class="text-xs sm:text-sm font-semibold text-slate-700">Live Agronomist Chat Session</span>
+                        <span id="chatCropContext" class="hidden sm:inline-block bg-slate-200 text-slate-700 text-[11px] font-medium px-2 py-0.5 rounded-md">Context: General Crop Health</span>
+                    </div>
+                    <button onclick="clearChat()" class="text-xs text-slate-500 hover:text-red-600 transition flex items-center space-x-1 px-2.5 py-1 rounded-lg hover:bg-red-50">
+                        <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                        <span>Clear Chat</span>
+                    </button>
+                </div>
+
+                <!-- Chat Messages List (Full Width) -->
+                <div id="chatMessages" class="flex-grow p-6 overflow-y-auto space-y-4 custom-scrollbar bg-slate-50/30">
+                    
+                    <!-- Initial AI Message -->
+                    <div class="flex items-start space-x-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 text-sm shadow-sm">
+                            <i data-lucide="bot" class="w-5 h-5"></i>
+                        </div>
+                        <div class="bg-white border border-slate-200/80 rounded-2xl rounded-tl-none p-4 text-xs sm:text-sm text-slate-800 max-w-3xl shadow-sm space-y-1">
+                            <p class="font-semibold text-emerald-800 text-[11px] uppercase tracking-wider">AgriVision AI Assistant</p>
+                            <p>Hello Farmer! I am your AI Crop Health Doctor. Ask me anything regarding crop diseases, leaf spotting, organic bio-pesticides, fungicide treatments, or soil fertilization.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Chat Input Box (Full Width) -->
+                <div class="p-4 border-t border-slate-200 bg-white">
+                    <form onsubmit="handleChatSubmit(event)" class="flex items-center space-x-3 max-w-5xl mx-auto">
+                        <input type="text" id="chatInput" placeholder="Ask about crop diseases, remedies, fertilizers, soil health..." class="flex-grow bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:bg-white outline-none transition">
+                        <button type="submit" id="chatSendBtn" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-xl font-medium text-sm transition flex items-center justify-center space-x-2 shadow-sm">
+                            <span>Send</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 4: ABOUT AGRIVISION -->
+        <section id="tab-about" class="hidden space-y-6">
+            
+            <!-- Hero Header Banner -->
+            <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute right-0 top-0 bottom-0 opacity-10 pointer-events-none flex items-center pr-10">
+                    <i data-lucide="sprout" class="w-72 h-72"></i>
+                </div>
+                <div class="relative z-10 max-w-3xl space-y-2">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                        Smart Agriculture AI Project
+                    </span>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                        About AgriVision
+                    </h1>
+                    <p class="text-emerald-100 text-sm leading-relaxed">
+                        An intelligent crop disease detection and agronomic advisory system designed to help farmers quickly identify plant leaf diseases and apply targeted chemical and organic treatments.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project Attribution & Academic Credits Card -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+                <div class="flex items-center space-x-2 border-b border-slate-100 pb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900">Project Development & Academic Credits</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Developers -->
+                    <div class="bg-emerald-50/60 border border-emerald-200/80 rounded-xl p-4 space-y-1.5">
+                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider block">Developed By:</span>
+                        <p class="text-base font-bold text-slate-900">Akhilesh Korath & Jaydeep Modi</p>
+                        <p class="text-xs text-slate-600 font-medium">Branch: Computer Science and Business Systems (CSBS)</p>
+                        <p class="text-xs text-emerald-700 font-semibold">3rd Year | 5th Semester</p>
+                    </div>
+
+                    <!-- Mentor & Department -->
+                    <div class="bg-blue-50/60 border border-blue-200/80 rounded-xl p-4 space-y-1.5">
+                        <span class="text-xs font-bold text-blue-800 uppercase tracking-wider block">Under the Mentorship of:</span>
+                        <p class="text-base font-bold text-slate-900">Dr. Vivek Sharma</p>
+                        <p class="text-xs text-blue-700 font-semibold">Assistant Professor</p>
+                        <p class="text-xs text-slate-600 font-medium">Center for Computer Science and Technology Department</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How Project Works (Clean 6-Line Overview) -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+                <div class="flex items-center space-x-2 border-b border-slate-100 pb-3">
+                    <div class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center">
+                        <i data-lucide="workflow" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900">How the Project Works (6 Key Steps)</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Select Target Crop</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Farmer selects their specific crop from 13 supported staple varieties (Apple, Corn, Wheat, Potato, Rice, etc.).</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Upload Leaf Image</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">A clear photo of the suspected diseased or healthy leaf is uploaded directly from phone or computer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Instant AI Diagnosis</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Trained computer vision models scan leaf patterns in under 15ms to diagnose pathogen or healthy status.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Strict Crop Isolation</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">The system strictly confines predictions to the chosen crop, completely preventing cross-crop confusion.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">5</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Dual Treatment Advisory</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Provides comprehensive treatment lines including chemical sprays with exact dosages alongside organic bio-remedies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">6</span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Interactive AI Assistance</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Farmers can chat with the built-in AI Agronomist for follow-up guidance on spray timing, fertilizers, and field care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Highlights Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+                <div class="bg-white border border-slate-200 rounded-xl p-4 text-center shadow-sm">
+                    <span class="text-2xl font-extrabold text-emerald-700 block">13</span>
+                    <span class="text-xs text-slate-500 font-medium">Supported Crops</span>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 text-center shadow-sm">
+                    <span class="text-2xl font-extrabold text-emerald-700 block">&lt; 15ms</span>
+                    <span class="text-xs text-slate-500 font-medium">Inference Speed</span>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 text-center shadow-sm">
+                    <span class="text-2xl font-extrabold text-emerald-700 block">Strict</span>
+                    <span class="text-xs text-slate-500 font-medium">Crop Scoping</span>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 text-center shadow-sm">
+                    <span class="text-2xl font-extrabold text-emerald-700 block">Dual</span>
+                    <span class="text-xs text-slate-500 font-medium">Chemical & Organic</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+   
+
+    <!-- JavaScript Data & Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // All 16 Supported Crops Dataset (Matches backend)
+        let ALL_CROPS = [];
+
+        let activeTab = 'detector';
+        let currentSelectedFile = null;
+        let currentSampleKey = null;
+        let lastDiagnostic = { crop: "Garlic", disease: "Healthy" };
+
+        // Fetch Crops from Backend
+        async function loadCrops() {
+            try {
+                const res = await fetch('/api/crops');
+                const data = await res.json();
+                if (data.crops) {
+                    ALL_CROPS = data.crops;
+                    renderCropsGrid(ALL_CROPS);
+                }
+            } catch (err) {
+                console.warn('Could not fetch crops from API, using default list:', err);
+            }
+        }
+
+        // Fetch System Status
+        async function checkStatus() {
+            try {
+                const res = await fetch('/api/status');
+                const data = await res.json();
+                const headerStatus = document.getElementById('headerStatusText');
+                if (headerStatus) {
+                    headerStatus.innerText = 'AgriVision AI Engine Active';
+                }
+            } catch (e) {
+                // Ignore status error
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadCrops();
+            checkStatus();
+            setupDropzone();
+            if (window.lucide) lucide.createIcons();
+        });
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            activeTab = tabId;
+            ['detector', 'crops', 'assistant', 'about'].forEach(id => {
+                const el = document.getElementById(`tab-${id}`);
+                const navBtn = document.getElementById(`nav-${id}`);
+                const mobBtn = document.getElementById(`mob-nav-${id}`);
+
+                if (!el) return;
+
+                if (id === tabId) {
+                    el.classList.remove('hidden');
+                    if (navBtn) {
+                        navBtn.className = "px-3.5 py-2 rounded-lg text-sm font-medium text-emerald-700 bg-emerald-50 transition-colors flex items-center space-x-2";
+                    }
+                    if (mobBtn) {
+                        mobBtn.className = "p-2 text-emerald-700 text-xs flex flex-col items-center font-medium";
+                    }
+                } else {
+                    el.classList.add('hidden');
+                    if (navBtn) {
+                        navBtn.className = "px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-700 hover:bg-slate-50 transition-colors flex items-center space-x-2";
+                    }
+                    if (mobBtn) {
+                        mobBtn.className = "p-2 text-slate-600 text-xs flex flex-col items-center font-medium";
+                    }
+                }
+            });
+            if (window.lucide) lucide.createIcons();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Render Crops Card Grid
+        function renderCropsGrid(crops) {
+            const grid = document.getElementById('cropsGrid');
+            if (!grid) return;
+            grid.innerHTML = crops.map(c => `
+                <div class="bg-white border border-slate-200 hover:border-emerald-500 rounded-2xl p-4 transition shadow-sm hover:shadow-md flex flex-col justify-between group">
+                    <div>
+                        <div class="aspect-video bg-slate-100 rounded-xl overflow-hidden mb-3 relative">
+                            <img src="${c.sampleImg}" alt="${c.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                           
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">${c.name}</h3>
+
+                        
+                        <div class="mt-3 pt-3 border-t border-slate-100">
+                            <span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-1">Common Conditions:</span>
+                            <p class="text-xs text-slate-700 font-medium">${c.diseases}</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        // Filter Crops Grid
+        function filterCropsGrid() {
+            const query = document.getElementById('cropSearchInput').value.toLowerCase();
+            const filtered = ALL_CROPS.filter(c => 
+                c.name.toLowerCase().includes(query) || 
+                c.sci.toLowerCase().includes(query) || 
+                c.diseases.toLowerCase().includes(query)
+            );
+            renderCropsGrid(filtered);
+        }
+
+        // Select specific crop and navigate to detector for maximum accuracy
+        function selectCropAndScan(cropId) {
+            switchTab('detector');
+            const selectEl = document.getElementById('cropSelect');
+            if (selectEl && cropId) {
+                selectEl.value = cropId;
+            }
+            removeImage();
+            const dropzone = document.getElementById('dropzone');
+            if (dropzone) {
+                dropzone.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // Backward compatibility
+        function goToDetector(cropId) {
+            if (cropId) {
+                selectCropAndScan(cropId);
+            } else {
+                switchTab('detector');
+                removeImage();
+            }
+        }
+
+        function quickScanCrop(cropId) {
+            selectCropAndScan(cropId);
+        }
+
+        // File Selection Preview
+        function handleFileSelect(e) {
+            const file = e.target && e.target.files && e.target.files[0];
+            if (file) {
+                currentSelectedFile = file;
+                currentSampleKey = null;
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    const preview = document.getElementById('imagePreview');
+                    const placeholder = document.getElementById('uploadPlaceholder');
+                    const previewContainer = document.getElementById('previewContainer');
+                    if (preview) preview.src = evt.target.result;
+                    if (placeholder) placeholder.classList.add('hidden');
+                    if (previewContainer) previewContainer.classList.remove('hidden');
+                    if (window.lucide) lucide.createIcons();
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function removeImage(e) {
+            if (e && e.stopPropagation) e.stopPropagation();
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput) fileInput.value = '';
+            const preview = document.getElementById('imagePreview');
+            if (preview) preview.src = '';
+            const placeholder = document.getElementById('uploadPlaceholder');
+            if (placeholder) placeholder.classList.remove('hidden');
+            const previewContainer = document.getElementById('previewContainer');
+            if (previewContainer) previewContainer.classList.add('hidden');
+            currentSelectedFile = null;
+            currentSampleKey = null;
+        }
+
+        // Dropzone Drag and Drop setup
+        function setupDropzone() {
+            const dropzone = document.getElementById('dropzone');
+            const fileInput = document.getElementById('fileInput');
+            if (!dropzone || !fileInput) return;
+
+            ['dragenter', 'dragover'].forEach(name => {
+                dropzone.addEventListener(name, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropzone.classList.add('border-emerald-500', 'bg-emerald-100/50');
+                });
+            });
+
+            ['dragleave', 'drop'].forEach(name => {
+                dropzone.addEventListener(name, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropzone.classList.remove('border-emerald-500', 'bg-emerald-100/50');
+                });
+            });
+
+            dropzone.addEventListener('drop', (e) => {
+                if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+                    fileInput.files = e.dataTransfer.files;
+                    handleFileSelect({ target: fileInput });
+                }
+            });
+        }
+
+        // Load Preset Sample Photos
+        function loadSample(sampleKey) {
+            currentSampleKey = sampleKey;
+            currentSelectedFile = null;
+
+            const sampleImgMap = {
+                apple: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=700&auto=format&fit=crop&q=60",
+                tomato: "https://plus.unsplash.com/premium_photo-1661833100239-de8f260b6f8c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+                corn: "https://images.unsplash.com/photo-1554402100-8d1d9f3dff80?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+                wheat: "https://images.unsplash.com/photo-1607460694867-af0c6d6f2c52?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+                rose: "https://images.unsplash.com/photo-1586082206695-d19601b5aa88?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            };
+
+            const preview = document.getElementById('imagePreview');
+            const placeholder = document.getElementById('uploadPlaceholder');
+            const previewContainer = document.getElementById('previewContainer');
+
+            if (preview && sampleImgMap[sampleKey]) {
+                preview.src = sampleImgMap[sampleKey];
+                if (placeholder) placeholder.classList.add('hidden');
+                if (previewContainer) previewContainer.classList.remove('hidden');
+            }
+
+            const cropSelect = document.getElementById('cropSelect');
+            if (cropSelect && sampleKey) {
+                cropSelect.value = sampleKey;
+            }
+
+            runAnalysis();
+        }
+
+        // Live Real Analysis Workflow Calling Backend
+        async function runAnalysis() {
+            const cropSelect = document.getElementById('cropSelect');
+            const cropVal = cropSelect ? cropSelect.value : '';
+
+            // Validation 1: User must select a crop
+            if (!cropVal) {
+                if (cropSelect) {
+                    cropSelect.classList.add('border-red-500', 'ring-2', 'ring-red-400');
+                    setTimeout(() => cropSelect.classList.remove('border-red-500', 'ring-2', 'ring-red-400'), 2500);
+                    cropSelect.focus();
+                }
+                alert('⚠️ Please select a crop from the dropdown before analyzing!');
+                return;
+            }
+
+            // Validation 2: Ensure an image is selected or a sample is chosen
+            if (!currentSelectedFile && !currentSampleKey) {
+                const dropzone = document.getElementById('dropzone');
+                if (dropzone) {
+                    dropzone.classList.add('border-red-500', 'bg-red-50/60', 'ring-4', 'ring-red-300');
+                    setTimeout(() => {
+                        dropzone.classList.remove('border-red-500', 'bg-red-50/60', 'ring-4', 'ring-red-300');
+                    }, 2500);
+                }
+                alert('⚠️ Please upload a plant leaf photo before analyzing!');
+                return;
+            }
+
+            const emptyState = document.getElementById('resultEmptyState');
+            const loadingState = document.getElementById('resultLoadingState');
+            const resultPanel = document.getElementById('resultPanel');
+            const analyzeBtn = document.getElementById('analyzeBtn');
+
+            emptyState.classList.add('hidden');
+            resultPanel.classList.add('hidden');
+            loadingState.classList.remove('hidden');
+            analyzeBtn.disabled = true;
+
+            try {
+                const formData = new FormData();
+                formData.append('crop', cropVal);
+
+                if (currentSelectedFile) {
+                    formData.append('image', currentSelectedFile);
+                } else if (currentSampleKey) {
+                    formData.append('sample', currentSampleKey);
+                }
+
+                const response = await fetch('/api/diagnose', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to analyze crop image');
+                }
+
+                loadingState.classList.add('hidden');
+                resultPanel.classList.remove('hidden');
+                analyzeBtn.disabled = false;
+
+                lastDiagnostic = data;
+
+                // Update Chat Crop Context Header
+                const ctxEl = document.getElementById('chatCropContext');
+                if (ctxEl) {
+                    ctxEl.innerText = `Context: ${data.crop} - ${data.disease}`;
+                }
+
+                // Header Badges
+                document.getElementById('resCropBadge').innerText = data.crop;
+                document.getElementById('resDiseaseName').innerText = data.disease;
+                document.getElementById('resSciName').innerText = '';
+                document.getElementById('resConfidence').innerText = data.confidence;
+
+                // Health Status Indicator
+                const statusBadge = document.getElementById('resStatusBadge');
+                if (data.status.toLowerCase() === 'healthy') {
+                    statusBadge.className = "bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center space-x-1";
+                    statusBadge.innerHTML = `<i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i><span>Crop Vigorous & Healthy</span>`;
+                } else {
+                    statusBadge.className = "bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center space-x-1";
+                    statusBadge.innerHTML = `<i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-red-600"></i><span>Infection Detected</span>`;
+                }
+
+                // Symptoms
+                document.getElementById('resSymptomsList').innerHTML = data.symptoms.map(s => `<li>${s}</li>`).join('');
+                
+                // Treatment Protocol Summary
+                const treatmentEl = document.getElementById('resTreatmentText');
+                if (treatmentEl) {
+                    treatmentEl.innerText = data.treatment || 'Apply recommended therapeutic treatment and monitor foliage closely.';
+                }
+
+                // Remedies
+                document.getElementById('resOrganicRemedies').innerHTML = data.organic.map(o => `<li>${o}</li>`).join('');
+                document.getElementById('resChemicalRemedies').innerHTML = data.chemical.map(c => `<li>${c}</li>`).join('');
+
+                // Prevention
+                document.getElementById('resPreventionList').innerHTML = data.prevention.map(p => `<li>${p}</li>`).join('');
+
+                // Alternatives
+                const altList = document.getElementById('resAlternativesList');
+                if (data.alternatives && data.alternatives.length > 0) {
+                    altList.innerHTML = data.alternatives.map((alt, idx) => `
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 flex justify-between items-center">
+                            <div>
+                                <span class="font-medium text-slate-800">#${idx + 2} ${alt.crop}</span>
+                                <span class="text-slate-500 block text-[11px]">${alt.disease}</span>
+                            </div>
+                            <span class="font-bold text-slate-600 bg-white px-2 py-0.5 rounded border border-slate-200">${alt.confidence}%</span>
+                        </div>
+                    `).join('');
+                    document.getElementById('alternativesBlock').classList.remove('hidden');
+                } else {
+                    document.getElementById('alternativesBlock').classList.add('hidden');
+                }
+
+                showDiagTab('symptoms');
+                if (window.lucide) lucide.createIcons();
+
+            } catch (err) {
+                loadingState.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                analyzeBtn.disabled = false;
+                alert('Analysis Error: ' + err.message);
+            }
+        }
+
+        // Diagnostic Sub Tabs
+        function showDiagTab(tab) {
+            ['symptoms', 'remedies', 'prevention'].forEach(t => {
+                const content = document.getElementById(`diagTab${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                const btn = document.getElementById(`btnDiag${t.charAt(0).toUpperCase() + t.slice(1)}`);
+
+                if (t === tab) {
+                    content.classList.remove('hidden');
+                    btn.className = "py-2 rounded-lg bg-white text-slate-800 shadow-sm transition";
+                } else {
+                    content.classList.add('hidden');
+                    btn.className = "py-2 rounded-lg text-slate-600 hover:text-slate-800 transition";
+                }
+            });
+        }
+
+        // Transition from Detector result to Chat
+        function askAIAboutDisease() {
+            switchTab('assistant');
+            const prompt = `Can you provide a detailed step-by-step treatment schedule, chemical dosages, and preventive safety precautions for ${lastDiagnostic.disease} in ${lastDiagnostic.crop}?`;
+            sendPresetPrompt(prompt);
+        }
+
+        // Live Chat Assistant Logic (Calling Backend Node.js AI Advice Endpoint)
+        async function handleChatSubmit(e) {
+            if (e) e.preventDefault();
+            const input = document.getElementById('chatInput');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendChatMessage('user', text);
+            input.value = '';
+
+            // Loading Indicator
+            const loadingId = appendChatLoading();
+            const hindi=text+ " hindi me";
+            try {
+                const cropName = (lastDiagnostic && lastDiagnostic.crop) ? lastDiagnostic.crop : 'Not specified';
+                const diseaseName = (lastDiagnostic && lastDiagnostic.disease) ? lastDiagnostic.disease : 'Not specified';
+
+                const response = await fetch('/api/advice', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        question: text,
+                        crop: cropName,
+                        disease: diseaseName
+                    })
+                });
+
+                const data = await response.json();
+                removeChatLoading(loadingId);
+
+                if (response.ok && data.advice) {
+                    appendChatMessage('ai', data.advice);
+                } else if (data.error) {
+                    appendChatMessage('ai', `⚠️ ${data.error}`);
+                } else {
+                    appendChatMessage('ai', "I recommend consulting a local agricultural extension officer for field verification.");
+                }
+
+            } catch (err) {
+                removeChatLoading(loadingId);
+                appendChatMessage('ai', `Regarding your query about "${text}": We recommend applying protective copper fungicides and maintaining clean drainage. (Server connection error: ${err.message})`);
+            }
+        }
+
+        function sendPresetPrompt(promptText) {
+            document.getElementById('chatInput').value = promptText;
+            handleChatSubmit(null);
+        }
+
+        function appendChatMessage(role, text) {
+            const chatMessages = document.getElementById('chatMessages');
+            const isUser = role === 'user';
+            const cleanText = (typeof text === 'string') ? text.replace(/\*\*/g, '').replace(/\*/g, '') : text;
+
+            const msgHtml = `
+                <div class="flex items-start space-x-3 ${isUser ? 'flex-row-reverse space-x-reverse' : ''}">
+                    <div class="w-9 h-9 rounded-xl ${isUser ? 'bg-slate-800' : 'bg-emerald-600'} text-white flex items-center justify-center flex-shrink-0 text-xs font-semibold shadow-sm">
+                        <i data-lucide="${isUser ? 'user' : 'bot'}" class="w-5 h-5"></i>
+                    </div>
+                    <div class="${isUser ? 'bg-emerald-600 text-white rounded-tr-none' : 'bg-white border border-slate-200/90 text-slate-800 rounded-tl-none shadow-sm'} rounded-2xl p-4 text-xs sm:text-sm max-w-xl md:max-w-3xl space-y-1">
+                        <p class="font-semibold ${isUser ? 'text-emerald-100' : 'text-emerald-800'} text-[11px] uppercase tracking-wider">${isUser ? 'You' : 'AgriVision AI Assistant'}</p>
+                        <p class="whitespace-pre-line leading-relaxed">${escapeHtml(cleanText)}</p>
+                    </div>
+                </div>
+            `;
+
+            chatMessages.insertAdjacentHTML('beforeend', msgHtml);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            lucide.createIcons();
+        }
+
+        function appendChatLoading() {
+            const chatMessages = document.getElementById('chatMessages');
+            const id = 'loading-' + Date.now();
+            const msgHtml = `
+                <div id="${id}" class="flex items-start space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                        <i data-lucide="bot" class="w-5 h-5"></i>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-2xl rounded-tl-none p-4 text-xs text-slate-500 flex items-center space-x-2 shadow-sm">
+                        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-bounce"></div>
+                        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-bounce [animation-delay:-0.15s]"></div>
+                        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-bounce [animation-delay:-0.3s]"></div>
+                        <span class="ml-1 text-slate-600 font-medium">AgriVision AI is generating practical advice...</span>
+                    </div>
+                </div>
+            `;
+            chatMessages.insertAdjacentHTML('beforeend', msgHtml);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            lucide.createIcons();
+            return id;
+        }
+
+        function removeChatLoading(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function clearChat() {
+            document.getElementById('chatMessages').innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 text-sm shadow-sm">
+                        <i data-lucide="bot" class="w-5 h-5"></i>
+                    </div>
+                    <div class="bg-white border border-slate-200/80 rounded-2xl rounded-tl-none p-4 text-xs sm:text-sm text-slate-800 max-w-3xl shadow-sm space-y-1">
+                        <p class="font-semibold text-emerald-800 text-[11px] uppercase tracking-wider">AgriVision AI Assistant</p>
+                        <p>Chat session reset. Ask me any question about crop health, soil treatment, or pest remedies!</p>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+        }
+
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>

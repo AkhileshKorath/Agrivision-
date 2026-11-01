@@ -1,0 +1,3173 @@
+{
+  "0": {
+    "crop": "Apple",
+    "disease": "Annotation",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Apple. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "1": {
+    "crop": "Apple",
+    "disease": "Apple Disease",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Apple. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "2": {
+    "crop": "Apple",
+    "disease": "Apple Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Apple crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "3": {
+    "crop": "Apple",
+    "disease": "Examples Of Pixel Level Annotation",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Apple. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "4": {
+    "crop": "Apple",
+    "disease": "Image",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Apple. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "5": {
+    "crop": "Chickpea",
+    "disease": "1 Hr",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Chickpea crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "6": {
+    "crop": "Chickpea",
+    "disease": "3 R",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Chickpea crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "7": {
+    "crop": "Chickpea",
+    "disease": "5 Mr",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "8": {
+    "crop": "Chickpea",
+    "disease": "7 S",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "9": {
+    "crop": "Chickpea",
+    "disease": "9 Hs",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "10": {
+    "crop": "Corn (Maize)",
+    "disease": "Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "11": {
+    "crop": "Corn (Maize)",
+    "disease": "Common Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "12": {
+    "crop": "Corn (Maize)",
+    "disease": "Gray Leaf Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "13": {
+    "crop": "Corn (Maize)",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Corn (Maize) crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "14": {
+    "crop": "Cotton",
+    "disease": "Alternaria Leaf Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "15": {
+    "crop": "Cotton",
+    "disease": "Bacterial Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "16": {
+    "crop": "Cotton",
+    "disease": "Fusarium Wilt",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "17": {
+    "crop": "Cotton",
+    "disease": "Healthy Leaf",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Cotton crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "18": {
+    "crop": "Cotton",
+    "disease": "Verticillium Wilt",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "19": {
+    "crop": "Cotton",
+    "disease": "Alternaria Leaf",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Cotton. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "20": {
+    "crop": "Cotton",
+    "disease": "Bacterial Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "21": {
+    "crop": "Cotton",
+    "disease": "Fusarium Wilt",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "22": {
+    "crop": "Cotton",
+    "disease": "Healthy Leaf",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Cotton crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "23": {
+    "crop": "Cotton",
+    "disease": "Verticillium Wilt",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "24": {
+    "crop": "Indian Mustard",
+    "disease": "Belum Siap",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Indian Mustard crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "25": {
+    "crop": "Indian Mustard",
+    "disease": "Siap Panen",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Indian Mustard crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "26": {
+    "crop": "Onion",
+    "disease": "Alternaria D",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Onion. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "27": {
+    "crop": "Onion",
+    "disease": "Botrytis Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "28": {
+    "crop": "Onion",
+    "disease": "Bulb Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "29": {
+    "crop": "Onion",
+    "disease": "Bulb Blight D",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "30": {
+    "crop": "Onion",
+    "disease": "Caterpillar P",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Caterpillar P. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "31": {
+    "crop": "Onion",
+    "disease": "Downy Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "32": {
+    "crop": "Onion",
+    "disease": "Fusarium D",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Onion. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "33": {
+    "crop": "Onion",
+    "disease": "Healthy Leaves",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Onion crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "34": {
+    "crop": "Onion",
+    "disease": "Iris Yellow Virus Augment",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "35": {
+    "crop": "Onion",
+    "disease": "Purple Blotch",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "36": {
+    "crop": "Onion",
+    "disease": "Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "37": {
+    "crop": "Onion",
+    "disease": "Virosis D",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "38": {
+    "crop": "Onion",
+    "disease": "Xanthomonas Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "39": {
+    "crop": "Onion",
+    "disease": "Onion1",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Onion. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "40": {
+    "crop": "Onion",
+    "disease": "Stemphylium Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "41": {
+    "crop": "Pepper",
+    "disease": "Aphid",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Aphid. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "42": {
+    "crop": "Pepper",
+    "disease": "Bacterial Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "43": {
+    "crop": "Pepper",
+    "disease": "Blossom End Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "44": {
+    "crop": "Pepper",
+    "disease": "Burn",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Pepper. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "45": {
+    "crop": "Pepper",
+    "disease": "Edema",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Pepper. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "46": {
+    "crop": "Pepper",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Pepper crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "47": {
+    "crop": "Pepper",
+    "disease": "Leaf Curl",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "48": {
+    "crop": "Pepper",
+    "disease": "Leaf Miners",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Leaf Miners. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "49": {
+    "crop": "Pepper",
+    "disease": "Mosaic Virus",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "50": {
+    "crop": "Pepper",
+    "disease": "Nutrient Deficiency",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Pepper. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "51": {
+    "crop": "Pepper",
+    "disease": "Powdery Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "52": {
+    "crop": "Pepper",
+    "disease": "Spider Mite",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Spider Mite. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "53": {
+    "crop": "Pepper",
+    "disease": "Thrips",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Thrips. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "54": {
+    "crop": "Potato",
+    "disease": "Early Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "55": {
+    "crop": "Potato",
+    "disease": "Late Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "56": {
+    "crop": "Potato",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Potato crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "57": {
+    "crop": "Rice",
+    "disease": "Bacterial Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "58": {
+    "crop": "Rice",
+    "disease": "Brown Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "59": {
+    "crop": "Rice",
+    "disease": "Leaf Smut",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "60": {
+    "crop": "Rose",
+    "disease": "Healthy Leaf Rose",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Rose crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "61": {
+    "crop": "Rose",
+    "disease": "Rose Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "62": {
+    "crop": "Rose",
+    "disease": "Rose Sawfly Rose Slug",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Rose Sawfly Rose Slug. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "63": {
+    "crop": "Soybean",
+    "disease": "Mossaic Virus",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "64": {
+    "crop": "Soybean",
+    "disease": "Southern Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "65": {
+    "crop": "Soybean",
+    "disease": "Sudden Death Syndrone",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Soybean. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "66": {
+    "crop": "Soybean",
+    "disease": "Yellow Mosaic",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "67": {
+    "crop": "Soybean",
+    "disease": "Bacterial Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "68": {
+    "crop": "Soybean",
+    "disease": "Brown Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "69": {
+    "crop": "Soybean",
+    "disease": "Crestamento",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "70": {
+    "crop": "Soybean",
+    "disease": "Ferrugen",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "71": {
+    "crop": "Soybean",
+    "disease": "Powdery Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "72": {
+    "crop": "Soybean",
+    "disease": "Septoria",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Soybean. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "73": {
+    "crop": "Sugarcane",
+    "disease": "Banded Chlorosis",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "74": {
+    "crop": "Sugarcane",
+    "disease": "Brownrust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "75": {
+    "crop": "Sugarcane",
+    "disease": "Brown Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "76": {
+    "crop": "Sugarcane",
+    "disease": "Dried Leaves",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "77": {
+    "crop": "Sugarcane",
+    "disease": "Grassy Shoot",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "78": {
+    "crop": "Sugarcane",
+    "disease": "Healthy Leaves",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Sugarcane crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "79": {
+    "crop": "Sugarcane",
+    "disease": "Pokkah Boeng",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "80": {
+    "crop": "Sugarcane",
+    "disease": "Sett Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "81": {
+    "crop": "Sugarcane",
+    "disease": "Viral Disease",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "82": {
+    "crop": "Sugarcane",
+    "disease": "Yellow Leaf",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Sugarcane. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "83": {
+    "crop": "Sugarcane",
+    "disease": "Smut",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "84": {
+    "crop": "Tomato",
+    "disease": "Bacterial Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "85": {
+    "crop": "Tomato",
+    "disease": "Early Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "86": {
+    "crop": "Tomato",
+    "disease": "Late Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "87": {
+    "crop": "Tomato",
+    "disease": "Leaf Mold",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Tomato. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "88": {
+    "crop": "Tomato",
+    "disease": "Septoria Leaf Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "89": {
+    "crop": "Tomato",
+    "disease": "Spider Mites Two Spotted Spider Mite",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Spider Mites Two Spotted Spider Mite. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "90": {
+    "crop": "Tomato",
+    "disease": "Target Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "91": {
+    "crop": "Tomato",
+    "disease": "Tomato Yellow Leaf Curl Virus",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "92": {
+    "crop": "Tomato",
+    "disease": "Tomato Mosaic Virus",
+    "status": "Diseased",
+    "symptoms": [
+      "Mottled light and dark green mosaic patterns across leaf blades.",
+      "Severe upward or downward leaf curling, vein thickening, and stunted growth.",
+      "Puckered, rugose foliar distortion with brittle texture."
+    ],
+    "organic_remedies": [
+      "Spray sour buttermilk or raw milk dilution (100ml/L) as natural foliar antiviral barrier.",
+      "Control vector insect populations using concentrated Neem oil (5ml/L)."
+    ],
+    "chemical_remedies": [
+      "Viruses cannot be cured with fungicides; immediately control whitefly/aphid vectors.",
+      "Apply Thiamethoxam 25 WG (0.3g/L) or Dinotefuran 20 SG to suppress insect vectors."
+    ],
+    "preventive_tips": [
+      "Immediately rouge out and deeply bury heavily stunted mosaic-infected plants.",
+      "Use reflective silver mulching film to repel incoming vector insect swarms."
+    ],
+    "treatment": "Viral syndrome identified. Rouge out severely infected plants to prevent transmission and spray Thiamethoxam (0.3g/L) to control insect vectors."
+  },
+  "93": {
+    "crop": "Tomato",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Tomato crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "94": {
+    "crop": "Wheat",
+    "disease": "Aphid",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Aphid. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "95": {
+    "crop": "Wheat",
+    "disease": "Black Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "96": {
+    "crop": "Wheat",
+    "disease": "Blast",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "97": {
+    "crop": "Wheat",
+    "disease": "Brown Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "98": {
+    "crop": "Wheat",
+    "disease": "Common Root Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "99": {
+    "crop": "Wheat",
+    "disease": "Fusarium Head Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "100": {
+    "crop": "Wheat",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Wheat crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "101": {
+    "crop": "Wheat",
+    "disease": "Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "102": {
+    "crop": "Wheat",
+    "disease": "Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "103": {
+    "crop": "Wheat",
+    "disease": "Mite",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Mite. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "104": {
+    "crop": "Wheat",
+    "disease": "Septoria",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Wheat. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "105": {
+    "crop": "Wheat",
+    "disease": "Smut",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "106": {
+    "crop": "Wheat",
+    "disease": "Stem Fly",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Stem Fly. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "107": {
+    "crop": "Wheat",
+    "disease": "Tan Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "108": {
+    "crop": "Wheat",
+    "disease": "Yellow Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "109": {
+    "crop": "Wheat",
+    "disease": "Aphid",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Aphid. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "110": {
+    "crop": "Wheat",
+    "disease": "Aphid",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Aphid. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "111": {
+    "crop": "Wheat",
+    "disease": "Black Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "112": {
+    "crop": "Wheat",
+    "disease": "Black Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "113": {
+    "crop": "Wheat",
+    "disease": "Blast",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "114": {
+    "crop": "Wheat",
+    "disease": "Blast Test",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "115": {
+    "crop": "Wheat",
+    "disease": "Brown Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "116": {
+    "crop": "Wheat",
+    "disease": "Brown Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "117": {
+    "crop": "Wheat",
+    "disease": "Common Root Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "118": {
+    "crop": "Wheat",
+    "disease": "Common Root Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "119": {
+    "crop": "Wheat",
+    "disease": "Fusarium Head Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "120": {
+    "crop": "Wheat",
+    "disease": "Fusarium Head Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "121": {
+    "crop": "Wheat",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Wheat crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "122": {
+    "crop": "Wheat",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
+      "Turgid leaf vascular architecture with robust cell wall structure.",
+      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
+    ],
+    "organic_remedies": [
+      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
+      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
+    ],
+    "chemical_remedies": [
+      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
+      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
+    ],
+    "preventive_tips": [
+      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
+      "Practice balanced crop spacing to preserve airflow through canopy."
+    ],
+    "treatment": "Wheat crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
+  },
+  "123": {
+    "crop": "Wheat",
+    "disease": "Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "124": {
+    "crop": "Wheat",
+    "disease": "Leaf Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "125": {
+    "crop": "Wheat",
+    "disease": "Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "126": {
+    "crop": "Wheat",
+    "disease": "Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Talcum-like white to grayish powdery or downy fungal mycelium across leaf surfaces.",
+      "Foliar chlorosis, curling, and premature leaf withering.",
+      "Impaired photosynthesis causing significant yield reduction."
+    ],
+    "organic_remedies": [
+      "Spray Potassium Bicarbonate (3g/L) or Wettable Sulfur (2.5g/L).",
+      "Apply 10% whey or milk spray under bright morning sunlight."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of Hexaconazole 5 EC (1ml/L) or Difenoconazole 25 EC (0.5ml/L).",
+      "For downy mildew, spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2g/L)."
+    ],
+    "preventive_tips": [
+      "Improve canopy ventilation through selective thinning and trellising.",
+      "Eliminate dense shade and avoid overhead watering late in the day."
+    ],
+    "treatment": "Mildew infection detected. Apply Wettable Sulfur (2.5g/L) or Metalaxyl + Mancozeb (2g/L). Ensure adequate sunlight penetration."
+  },
+  "127": {
+    "crop": "Wheat",
+    "disease": "Mite",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Mite. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "128": {
+    "crop": "Wheat",
+    "disease": "Mite",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Mite. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "129": {
+    "crop": "Wheat",
+    "disease": "Septoria",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Wheat. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "130": {
+    "crop": "Wheat",
+    "disease": "Septoria",
+    "status": "Diseased",
+    "symptoms": [
+      "Irregular foliar chlorosis and localized tissue discoloration.",
+      "Reduced photosynthetic vigor and abnormal leaf morphology."
+    ],
+    "organic_remedies": [
+      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
+      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
+    ],
+    "chemical_remedies": [
+      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
+      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
+    ],
+    "preventive_tips": [
+      "Conduct regular field scouting and maintain balanced plant nutrition.",
+      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
+    ],
+    "treatment": "Foliar health issue detected in Wheat. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
+  },
+  "131": {
+    "crop": "Wheat",
+    "disease": "Smut",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "132": {
+    "crop": "Wheat",
+    "disease": "Smut",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked softening, basal browning, and stem/root vascular necrosis.",
+      "Sudden midday wilting of foliage despite adequate soil moisture.",
+      "Foul odor or dark fungal mass/sclerotia at the crown waterline."
+    ],
+    "organic_remedies": [
+      "Drench soil root zone with Trichoderma harzianum (10g/L) mixed in well-rotted manure.",
+      "Incorporate neem cake (200kg/acre) into soil to suppress pathogenic fungal inoculum."
+    ],
+    "chemical_remedies": [
+      "Soil drench with Carbendazim 50 WP (2g/L) or Copper Hydroxide (2g/L).",
+      "For soil-borne damping-off, apply Propamocarb hydrochloride or Metalaxyl drench."
+    ],
+    "preventive_tips": [
+      "Provide raised planting beds to prevent standing water accumulation around stems.",
+      "Practice minimum 3-year crop rotation with non-host botanical families."
+    ],
+    "treatment": "Vascular root/rot complex detected. Soil drench with Copper Hydroxide (2g/L) or Carbendazim. Correct field drainage immediately."
+  },
+  "133": {
+    "crop": "Wheat",
+    "disease": "Stem Fly",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Stem Fly. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "134": {
+    "crop": "Wheat",
+    "disease": "Stem Fly",
+    "status": "Diseased",
+    "symptoms": [
+      "Visible foliar feeding puncture marks, chlorotic stippling, or leaf curling.",
+      "Presence of sticky honeydew secretions, sooty mold, or silken insect webbing.",
+      "Stunted vegetative growth and leaf margin skeletonization."
+    ],
+    "organic_remedies": [
+      "Foliar spray of horticultural potassium soap or cold-pressed Neem oil (5ml/L).",
+      "Release natural predatory beneficial insects (Ladybird beetles, Lacewings, or predatory mites)."
+    ],
+    "chemical_remedies": [
+      "Apply systemic insecticide Imidacloprid 17.8 SL (0.5ml/L) or Acetamiprid 20 SP.",
+      "For mites, use specific acaricide Abamectin 1.9 EC or Fenpyroximate (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Install yellow and blue sticky traps (10-15 traps/acre) across crop perimeter.",
+      "Eradicate weed hosts along field borders that harbor over-wintering insect vectors."
+    ],
+    "treatment": "Targeted pest pressure from Stem Fly. Apply Neem oil (5ml/L) or systemic insecticide Imidacloprid (0.5ml/L) and install sticky monitoring traps."
+  },
+  "135": {
+    "crop": "Wheat",
+    "disease": "Tan Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "136": {
+    "crop": "Wheat",
+    "disease": "Tan Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Concentric dark necrotic lesions with characteristic target-board appearance.",
+      "Water-soaked foliar margins expanding rapidly into extensive leaf blighting.",
+      "Premature defoliation and progressive dieback of infected vegetative tissue."
+    ],
+    "organic_remedies": [
+      "Apply Copper Oxychloride 50 WP (2.5g/L) or Bordeaux Mixture (1%).",
+      "Foliar spray of Trichoderma viride culture enriched with fermented bio-extract."
+    ],
+    "chemical_remedies": [
+      "Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil 75 WP at initial lesion stage.",
+      "For systemic control, apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L)."
+    ],
+    "preventive_tips": [
+      "Prune lower foliage touching soil to eliminate ground-splash fungal spore transfer.",
+      "Switch to drip irrigation and avoid wetting plant foliage during evening hours."
+    ],
+    "treatment": "Foliar blight/spot complex detected. Apply Mancozeb 75 WP (2g/L) or Azoxystrobin (1ml/L). Prune severely infected lower foliage."
+  },
+  "137": {
+    "crop": "Wheat",
+    "disease": "Yellow Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "138": {
+    "crop": "Wheat",
+    "disease": "Yellow Rust",
+    "status": "Diseased",
+    "symptoms": [
+      "Bright orange, golden-yellow, or reddish-brown powdery pustules on foliage.",
+      "Pustules rupture epidermal tissue, producing millions of powdery fungal spores.",
+      "Chlorotic yellow banding surrounding sporulation sites leading to leaf drying."
+    ],
+    "organic_remedies": [
+      "Foliar application of Micronized Wettable Sulfur 80 WP (2.5g/L).",
+      "Spray bio-fungicide Bacillus subtilis or Trichoderma harzianum culture."
+    ],
+    "chemical_remedies": [
+      "Apply Propiconazole 25 EC (Tilt 1ml/L) or Tebuconazole 250 EC at first pustule detection.",
+      "Alternate with Mancozeb 75 WP (2g/L) to prevent resistance build-up."
+    ],
+    "preventive_tips": [
+      "Plant rust-resistant cultivar seeds certified by agricultural research centers.",
+      "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
+    ],
+    "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  }
+}
