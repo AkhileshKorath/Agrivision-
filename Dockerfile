@@ -1,19 +1,25 @@
 # Use official lightweight Node.js LTS image
 FROM node:20-slim
 
-# Install Python 3, pip, and essential build tools
+# Install Python 3, pip, venv, and libgomp1 (required for onnxruntime runtime)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-pip \
-    python3-dev \
+    python3-venv \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
 
-# Install Python requirements
+# Create and activate Python virtual environment (fixes Debian 12 PEP 668 externally-managed-environment)
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
+
+# Install Python requirements inside virtualenv
 COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Install Node.js dependencies
 COPY package*.json ./
