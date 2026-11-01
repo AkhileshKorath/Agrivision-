@@ -1,0 +1,8 @@
+node_modules/
+crop_images/
+.git/
+.env
+.env.local
+*.log
+.vscode/
+.idea/

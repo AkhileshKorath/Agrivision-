@@ -69,7 +69,24 @@ Agrivision/
 
 ---
 
-## 🚀 Getting Started
+## ☁️ Deploy to Render (Cloud Hosting)
+
+This repository is pre-configured with a production-ready `Dockerfile` and `render.yaml` for 1-click cloud deployment on [Render](https://render.com).
+
+### Quick Steps:
+1. Log in to [Render Dashboard](https://dashboard.render.com/) with GitHub.
+2. Click **New +** &rarr; **Web Service**.
+3. Connect your repository: `AkhileshKorath/Agrivision-`.
+4. Render will automatically detect the **Docker** environment:
+   - **Runtime:** `Docker`
+   - **Plan:** `Free`
+5. *(Optional)* Under **Environment Variables**, add:
+   - `GROQ_API_KEY`: `your_key_here` (for the AI agronomy chatbot)
+6. Click **Deploy Web Service** &mdash; Render will build the Docker container and give you a live HTTPS URL!
+
+---
+
+## 🚀 Getting Started Locally
 
 ### Prerequisites
 - **Node.js** (v18 or higher)
