@@ -7,13 +7,11 @@ const { execFile } = require('child_process');
 const dotenv = require('dotenv');
 const Groq = require('groq-sdk');
 
-// Load environment variables
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Initialize Groq AI Client with dynamic reload capability
 let groq = null;
 function getGroqClient() {
     if (groq) return groq;
@@ -149,7 +147,7 @@ function cleanApiOutput(text) {
         .replace(/\*/g, '');          // Remove any stray single asterisks
 }
 
-// Offline Agronomist Knowledge Engine (Fallback when no key is configured)
+
 function fallbackChatResponse(message) {
     const q = message.toLowerCase();
 
@@ -212,7 +210,6 @@ app.get('/api/crops', (req, res) => {
     });
 });
 
-// Multi-Line Clinical Treatment & Agronomy Advisory Generator
 function getExpandedTreatmentPlan(crop, disease, status) {
     const isHealthy = status.toLowerCase() === 'healthy';
     if (isHealthy) {

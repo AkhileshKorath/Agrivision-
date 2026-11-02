@@ -1,25 +1,14 @@
 #!/usr/bin/env python3
 """
-AgriVision Multi-Model Inference Engine (Strict Crop Scoping)
-------------------------------------------------------------
-Routes diagnostic queries to specialized SOTA models with STRICT crop isolation:
-  - When a crop is selected (e.g. Apple), the model strictly evaluates only that crop's diseases.
-  - No cross-crop leakage or foreign crop predictions can occur.
-
-Supported Crops (13 total):
-  1. Apple
-  2. Chickpea
-  3. Corn (Maize)
-  4. Cotton
-  5. Onion
-  6. Pepper (Bell Pepper)
-  7. Potato
-  8. Rice
-  9. Rose
-  10. Soybean
-  11. Sugarcane
-  12. Tomato
-  13. Wheat
+AgriVision Multi-Model Crop Disease Diagnostic Engine
+======================================================
+Strict crop-isolated diagnostic engine supporting:
+  - General Crops Model: Apple, Corn, Potato, Tomato, Pepper, Soybean
+  - Rice Specialist Model: Rice / Paddy
+  - Wheat Specialist Engine: wheat_disease_binary_cnn_model.h5 / ONNX + Calibrated Multi-Class Head
+  - Rose Specialist Engine: Calibrated Feature Head (Black Spot, Powdery Mildew, Downy Mildew, Rust, Healthy)
+  - Chickpea Specialist Engine: Calibrated Feature Head (Ascochyta Blight, Fusarium Wilt, Collar Rot, Dry Root Rot, Healthy)
+  - Remaining Crops Model: Cotton, Sugarcane, Onion
 """
 
 import argparse
@@ -41,10 +30,10 @@ except ImportError:
     sys.exit(1)
 
 IMAGE_SIZE = 224
+WHEAT_IMAGE_SIZE = 150
 MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)
 STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)
 
-# General Crops Dictionary (PlantVillage SOTA)
 GENERAL_CLASSES = {
     0: "Apple___Apple_scab",
     1: "Apple___Black_rot",
@@ -86,7 +75,6 @@ GENERAL_CLASSES = {
     37: "Tomato___healthy"
 }
 
-# Dedicated Rice Specialist Classes
 RICE_CLASSES = {
     0: "Rice___Bacterial_leaf_blight",
     1: "Rice___Brown_spot",
@@ -139,13 +127,20 @@ def preprocess_nhwc(img: Image.Image) -> np.ndarray:
     return np.expand_dims(arr, axis=0).astype(np.float32)
 
 
+def preprocess_wheat(img: Image.Image) -> np.ndarray:
+    """Preprocess to (1, 150, 150, 3) normalized [0, 1] for wheat binary CNN."""
+    img_resized = img.resize((WHEAT_IMAGE_SIZE, WHEAT_IMAGE_SIZE), Image.Resampling.BILINEAR)
+    arr = np.array(img_resized, dtype=np.float32) / 255.0
+    return np.expand_dims(arr, axis=0).astype(np.float32)
+
+
 def softmax(x: np.ndarray) -> np.ndarray:
     e_x = np.exp(x - np.max(x, axis=-1, keepdims=True))
     return e_x / np.sum(e_x, axis=-1, keepdims=True)
 
 
 class StrictMultiModelDetector:
-    """Strictly crop-isolated neural disease diagnostic engine."""
+    """Multi-Model crop disease detector ensuring zero cross-crop interference."""
 
     def __init__(self, base_dir: str = "."):
         self.base_dir = Path(base_dir)
@@ -154,7 +149,7 @@ class StrictMultiModelDetector:
 
         providers = ["CUDAExecutionProvider", "CPUExecutionProvider"] if "CUDAExecutionProvider" in ort.get_available_providers() else ["CPUExecutionProvider"]
 
-        # 1. General SOTA Model (Apple, Corn, Potato, Tomato, Pepper, Soybean)
+        # 1. General crops model
         general_model_path = self.models_dir / "general_crops.onnx"
         if not general_model_path.exists():
             general_model_path = self.base_dir / "crop_model.onnx"
@@ -168,7 +163,7 @@ class StrictMultiModelDetector:
             except Exception as e:
                 print(f"Warning: Failed to load general model: {e}", file=sys.stderr)
 
-        # 2. Rice Specialist Model
+        # 2. Rice specialist model
         rice_model_path = self.models_dir / "rice_model.onnx"
         self.rice_session = None
         self.rice_input_name = None
@@ -179,25 +174,67 @@ class StrictMultiModelDetector:
             except Exception as e:
                 print(f"Warning: Failed to load rice model: {e}", file=sys.stderr)
 
-        # 3. Remaining Crops Model (Wheat, Cotton, Sugarcane, Onion, Rose, Chickpea)
-        remaining_model_path = self.models_dir / "remaining_crops.onnx"
+        # 3. Wheat specialist model (User's wheat_disease_binary_cnn_model.h5 / onnx)
+        wheat_model_path = self.models_dir / "wheat_model.onnx"
+        self.wheat_session = None
+        self.wheat_input_name = None
+        if wheat_model_path.exists():
+            try:
+                self.wheat_session = ort.InferenceSession(str(wheat_model_path), providers=providers)
+                self.wheat_input_name = self.wheat_session.get_inputs()[0].name
+            except Exception as e:
+                print(f"Warning: Failed to load wheat model: {e}", file=sys.stderr)
+
+        # 4. Remaining crops & feature extractor model
+        feat_model_path = self.models_dir / "remaining_crops_with_features.onnx"
+        if not feat_model_path.exists():
+            feat_model_path = self.models_dir / "remaining_crops.onnx"
+
         remaining_classes_path = self.models_dir / "remaining_classes.json"
         self.remaining_session = None
         self.remaining_classes = {}
-        if remaining_model_path.exists() and remaining_classes_path.exists():
+        self.feat_output_name = None
+
+        if feat_model_path.exists():
             try:
-                self.remaining_session = ort.InferenceSession(str(remaining_model_path), providers=providers)
+                self.remaining_session = ort.InferenceSession(str(feat_model_path), providers=providers)
+                for out_meta in self.remaining_session.get_outputs():
+                    if "global_average_pooling" in out_meta.name or "Mean_Squeeze" in out_meta.name:
+                        self.feat_output_name = out_meta.name
+                        break
+            except Exception as e:
+                print(f"Warning: Failed to load feature/remaining model: {e}", file=sys.stderr)
+
+        if remaining_classes_path.exists():
+            try:
                 with open(remaining_classes_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
                     self.remaining_classes = {int(k): str(v) for k, v in data.items()}
             except Exception as e:
-                print(f"Warning: Failed to load remaining crops model: {e}", file=sys.stderr)
+                print(f"Warning: Failed to load remaining classes: {e}", file=sys.stderr)
+
+        # 5. Specialist calibrated heads (Rose, Chickpea, Wheat)
+        heads_path = self.models_dir / "specialist_heads.npz"
+        self.specialist_heads = None
+        if heads_path.exists():
+            try:
+                self.specialist_heads = np.load(str(heads_path))
+            except Exception as e:
+                print(f"Warning: Failed to load specialist heads: {e}", file=sys.stderr)
+
+    def extract_features(self, img: Image.Image) -> np.ndarray:
+        """Extract 1280-dimensional MobileNetV2 embedding."""
+        if not self.remaining_session or not self.feat_output_name:
+            raise RuntimeError("Feature extraction model not loaded.")
+        tensor = preprocess_nchw(img)
+        inp_name = self.remaining_session.get_inputs()[0].name
+        feats = self.remaining_session.run([self.feat_output_name], {inp_name: tensor})
+        return feats[0][0]
 
     def diagnose(self, image_input: Union[str, Path, Image.Image], top_k: int = 3, crop_filter: str = "apple"):
         img = load_image(image_input)
         start_time = time.perf_counter()
 
-        # Normalize crop name
         crop_clean = (crop_filter or "apple").strip().lower().replace("_", "").replace(" ", "").replace("(maize)", "")
         if "corn" in crop_clean:
             crop_clean = "corn"
@@ -205,13 +242,13 @@ class StrictMultiModelDetector:
             crop_clean = "pepper"
 
         candidates = []
+        model_used = "Standard Multi-Model Engine"
 
-        # ----------------------------------------------------------------------
-        # STRICT ROUTE 1: RICE
-        # ----------------------------------------------------------------------
+        # --- A. RICE SPECIALIST ---
         if crop_clean in {"rice", "paddy"}:
             if not self.rice_session:
                 raise RuntimeError("Rice specialist model not loaded.")
+            model_used = "Rice Specialist CNN (models/rice_model.onnx)"
             tensor = preprocess_nhwc(img)
             out = self.rice_session.run(None, {self.rice_input_name: tensor})
             logits = out[0][0]
@@ -219,17 +256,15 @@ class StrictMultiModelDetector:
             for idx, p in enumerate(probs):
                 candidates.append((RICE_CLASSES[idx], float(p)))
 
-        # ----------------------------------------------------------------------
-        # STRICT ROUTE 2: GENERAL CROPS (Apple, Corn, Potato, Tomato, Pepper, Soybean)
-        # ----------------------------------------------------------------------
+        # --- B. GENERAL CROPS (Apple, Corn, Potato, Tomato, Pepper, Soybean) ---
         elif crop_clean in {"apple", "corn", "potato", "tomato", "pepper", "soybean"}:
             if not self.general_session:
                 raise RuntimeError("General crops model not loaded.")
+            model_used = "General Crops Multi-Task Model (models/general_crops.onnx)"
             tensor = preprocess_nchw(img)
             out = self.general_session.run(None, {self.general_input_name: tensor})
             logits = out[0][0]
 
-            # Find matching indices STRICTLY for the target crop
             matched_indices = []
             for idx, lbl in GENERAL_CLASSES.items():
                 c_prefix = lbl.split("___")[0].lower()
@@ -237,27 +272,119 @@ class StrictMultiModelDetector:
                     matched_indices.append(idx)
 
             if not matched_indices:
-                matched_indices = [0, 1, 2, 3]  # Fallback to Apple if unmatched
+                matched_indices = [0, 1, 2, 3]
 
-            # Compute softmax STRICTLY among the target crop's logits
             sub_logits = np.array([logits[i] for i in matched_indices])
             sub_probs = softmax(sub_logits)
 
             for idx, p in zip(matched_indices, sub_probs):
                 candidates.append((GENERAL_CLASSES[idx], float(p)))
 
-        # ----------------------------------------------------------------------
-        # STRICT ROUTE 3: REMAINING CROPS (Wheat, Cotton, Sugarcane, Onion, Rose, Chickpea)
-        # ----------------------------------------------------------------------
-        elif crop_clean in {"wheat", "cotton", "sugarcane", "sugar", "cane", "onion", "rose", "chickpea"}:
+        # --- C. WHEAT SPECIALIST (User's wheat_disease_binary_cnn_model.h5 + Multi-Class Specialist Head) ---
+        elif crop_clean in {"wheat"}:
+            model_used = "Wheat Specialist Engine (wheat_disease_binary_cnn_model.h5 + Multi-Class Head)"
+            # 1. Run binary CNN model if available
+            binary_score = 0.99
+            if self.wheat_session:
+                w_tensor = preprocess_wheat(img)
+                w_out = self.wheat_session.run(None, {self.wheat_input_name: w_tensor})
+                binary_score = float(w_out[0][0][0])
+
+            # 2. Run calibrated Wheat head for specific diagnosis
+            if self.specialist_heads and "wheat_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["wheat_mean"]
+                scale = self.specialist_heads["wheat_scale"]
+                coef = self.specialist_heads["wheat_coef"]
+                intercept = self.specialist_heads["wheat_intercept"]
+                classes = self.specialist_heads["wheat_classes"]
+
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
+
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                # Fallback to remaining crops wheat classes
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "wheat" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
+
+        # --- D. ROSE SPECIALIST ---
+        elif crop_clean in {"rose"}:
+            model_used = "Rose Specialist Diagnostic Engine (Calibrated 1280-d Feature Head)"
+            if self.specialist_heads and "rose_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["rose_mean"]
+                scale = self.specialist_heads["rose_scale"]
+                coef = self.specialist_heads["rose_coef"]
+                intercept = self.specialist_heads["rose_intercept"]
+                classes = self.specialist_heads["rose_classes"]
+
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
+
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                # Fallback to remaining crops rose classes
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "rose" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
+
+        # --- E. CHICKPEA SPECIALIST ---
+        elif crop_clean in {"chickpea"}:
+            model_used = "Chickpea Specialist Diagnostic Engine (Calibrated 1280-d Feature Head)"
+            if self.specialist_heads and "chickpea_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["chickpea_mean"]
+                scale = self.specialist_heads["chickpea_scale"]
+                coef = self.specialist_heads["chickpea_coef"]
+                intercept = self.specialist_heads["chickpea_intercept"]
+                classes = self.specialist_heads["chickpea_classes"]
+
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
+
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                # Fallback to remaining crops chickpea classes
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "chickpea" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
+
+        # --- F. REMAINING CROPS (Cotton, Sugarcane, Onion) ---
+        elif crop_clean in {"cotton", "sugarcane", "sugar", "cane", "onion"}:
             if not self.remaining_session:
                 raise RuntimeError("Remaining crops model not loaded.")
+            model_used = "Remaining Crops Specialist (models/remaining_crops.onnx)"
             tensor = preprocess_nchw(img)
-            input_name = self.remaining_session.get_inputs()[0].name
-            out = self.remaining_session.run(None, {input_name: tensor})
+            inp_name = self.remaining_session.get_inputs()[0].name
+            out = self.remaining_session.run(None, {inp_name: tensor})
             logits = out[0][0]
 
-            # Search strictly for labels starting with this crop name
             matched_indices = []
             for idx, lbl in self.remaining_classes.items():
                 lbl_lower = lbl.lower()
@@ -267,21 +394,19 @@ class StrictMultiModelDetector:
                     matched_indices.append(idx)
 
             if not matched_indices:
-                # Fallback to any class containing crop name
                 matched_indices = [idx for idx, lbl in self.remaining_classes.items() if crop_clean in lbl.lower()]
 
             if not matched_indices:
                 matched_indices = list(self.remaining_classes.keys())[:4]
 
-            # Compute softmax STRICTLY among matched crop logits
             sub_logits = np.array([logits[i] for i in matched_indices])
             sub_probs = softmax(sub_logits)
 
             for idx, p in zip(matched_indices, sub_probs):
                 candidates.append((self.remaining_classes[idx], float(p)))
 
+        # --- G. FALLBACK ---
         else:
-            # Default to Apple strictly if unrecognized
             tensor = preprocess_nchw(img)
             out = self.general_session.run(None, {self.general_input_name: tensor})
             logits = out[0][0]
@@ -292,7 +417,6 @@ class StrictMultiModelDetector:
 
         latency_ms = (time.perf_counter() - start_time) * 1000.0
 
-        # Sort strictly by confidence descending
         candidates.sort(key=lambda x: x[1], reverse=True)
         top_candidates = candidates[:top_k]
 
@@ -302,13 +426,11 @@ class StrictMultiModelDetector:
             raw_crop = parts[0] if len(parts) > 1 else crop_clean.title()
             raw_disease = parts[1] if len(parts) > 1 else label
 
-            # Normalize names
             crop_name = raw_crop.replace("_", " ").title()
             disease_name = raw_disease.replace("_", " ").title()
             is_healthy = "healthy" in disease_name.lower()
             status = "Healthy" if is_healthy else "Diseased"
 
-            # Check metadata
             matched_info = None
             for key, val in self.disease_info.items():
                 if val.get("crop", "").lower() == crop_name.lower() and val.get("disease", "").lower() == disease_name.lower():
@@ -316,8 +438,18 @@ class StrictMultiModelDetector:
                     break
 
             treatment = f"{crop_name} crop is healthy. Continue balanced nutrition and scouting." if is_healthy else f"Apply recommended {crop_name} disease spray (Neem oil or systemic fungicide/bactericide)."
-            if matched_info and "treatment" in matched_info:
-                treatment = matched_info["treatment"]
+            symptoms = []
+            organic_remedies = []
+            chemical_remedies = []
+            preventive_tips = []
+
+            if matched_info:
+                if "treatment" in matched_info:
+                    treatment = matched_info["treatment"]
+                symptoms = matched_info.get("symptoms", [])
+                organic_remedies = matched_info.get("organic_remedies", [])
+                chemical_remedies = matched_info.get("chemical_remedies", [])
+                preventive_tips = matched_info.get("preventive_tips", [])
 
             results.append({
                 "class_id": rank,
@@ -326,7 +458,12 @@ class StrictMultiModelDetector:
                 "disease": disease_name,
                 "status": status,
                 "treatment": treatment,
-                "confidence": round(prob * 100.0, 2)
+                "symptoms": symptoms,
+                "organic_remedies": organic_remedies,
+                "chemical_remedies": chemical_remedies,
+                "preventive_tips": preventive_tips,
+                "confidence": round(prob * 100.0, 2),
+                "model_engine": model_used
             })
 
         return results, latency_ms
@@ -335,7 +472,7 @@ class StrictMultiModelDetector:
 def main():
     parser = argparse.ArgumentParser(description="Strict Multi-Model Crop Disease Diagnostic Engine")
     parser.add_argument("--image", "-i", type=str, default=None, help="Path or URL to leaf image")
-    parser.add_argument("--crop", "-c", type=str, default="apple", help="Target crop (STRICT: Apple, Corn, Potato, Rice, Wheat, etc.)")
+    parser.add_argument("--crop", "-c", type=str, default="apple", help="Target crop (STRICT: Apple, Corn, Potato, Rice, Wheat, Chickpea, Rose, etc.)")
     parser.add_argument("--topk", "-k", type=int, default=3, help="Number of predictions")
     parser.add_argument("--json", action="store_true", help="Output JSON format")
     args = parser.parse_args()
@@ -363,7 +500,8 @@ def main():
                 "top": top,
                 "predictions": results,
                 "latency_ms": round(latency_ms, 2),
-                "image": str(image_path)
+                "image": str(image_path),
+                "model_engine": results[0]["model_engine"] if results else "StrictMultiModelDetector"
             }
             print(json.dumps(output, indent=2))
         else:

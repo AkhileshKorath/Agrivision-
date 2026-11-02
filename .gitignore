@@ -26,3 +26,5 @@ pretrained_model.onnx
 .idea/
 .DS_Store
 Thumbs.db
+
+*.pptx

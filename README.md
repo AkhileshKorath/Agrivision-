@@ -18,25 +18,27 @@ AgriVision is an intelligent agricultural crop health diagnosis and clinical adv
 1. **Strict Crop Isolation Engine:**
    - Evaluates leaf photos strictly within the selected crop's disease subspace, eliminating cross-crop false positives (e.g. Corn diseases will never be misdiagnosed as Apple pathologies).
 
-2. **Multi-Model Neural Ensemble (ONNX):**
-   - **`general_crops.onnx`**: SOTA MobileNet/ResNet model trained on PlantVillage benchmark (Apple, Corn, Potato, Tomato, Pepper, Soybean) achieving 98.5%+ validation accuracy.
-   - **`rice_model.onnx`**: High-resolution ResNet-50 model specialized for Rice diseases (Bacterial Leaf Blight, Brown Spot, Leaf Smut, Tungro).
-   - **`remaining_crops.onnx`**: Custom-trained multi-class ONNX neural network covering Wheat, Cotton, Sugarcane, Onion, Rose, and Chickpea.
+2. **Multi-Model Neural Ensemble (ONNX & CNN):**
+   - **`general_crops.onnx`**: SOTA model trained on benchmark crops (Apple, Corn, Potato, Tomato, Pepper, Soybean) achieving 98.5%+ validation accuracy.
+   - **`rice_model.onnx`**: High-resolution specialist model for Rice pathologies (Bacterial Leaf Blight, Brown Spot, Leaf Smut, Tungro).
+   - **`wheat_disease_binary_cnn_model.h5` & `wheat_model.onnx`**: Dedicated Wheat CNN specialist model paired with calibrated multi-class rust/blight heads.
+   - **Specialist Clinical Heads (`specialist_heads.npz`)**: High-precision prototype classifiers for Rose (Black Spot, Powdery Mildew, Downy Mildew, Rust, Healthy) and Chickpea (Ascochyta Blight, Fusarium Wilt, Collar Rot, Dry Root Rot, Healthy).
+   - **`remaining_crops_with_features.onnx`**: MobileNetV2 feature extractor and multi-class network covering Cotton, Sugarcane, and Onion.
 
 3. **13 Strictly Supported Staple Crops:**
    - 🍏 **Apple** (Scab, Black Rot, Cedar Apple Rust, Healthy)
-   - 🌱 **Chickpea** (Ascochyta Blight, Fusarium Wilt, Healthy)
+   - 🌱 **Chickpea** (Ascochyta Blight, Fusarium Wilt, Collar Rot, Dry Root Rot, Healthy)
    - 🌽 **Corn / Maize** (Cercospora Leaf Spot, Common Rust, Northern Leaf Blight, Healthy)
    - ☁️ **Cotton** (Bacterial Blight, Curl Virus, Leaf Spot, Healthy)
    - 🧅 **Onion** (Purple Blotch, Downy Mildew, Healthy)
    - 🫑 **Pepper / Bell Pepper** (Bacterial Spot, Healthy)
    - 🥔 **Potato** (Early Blight, Late Blight, Healthy)
    - 🌾 **Rice / Paddy** (Bacterial Leaf Blight, Brown Spot, Leaf Smut, Tungro, Healthy)
-   - 🌹 **Rose** (Black Spot, Powdery Mildew, Healthy)
+   - 🌹 **Rose** (Black Spot, Powdery Mildew, Downy Mildew, Rust, Healthy)
    - 🫘 **Soybean** (Bacterial Blight, Frogeye Leaf Spot, Healthy)
    - 🎋 **Sugarcane** (Red Rot, Leaf Scald, Rust, Healthy)
    - 🍅 **Tomato** (Early Blight, Late Blight, Septoria, Yellow Leaf Curl Virus, Spider Mites, Bacterial Spot, Target Spot, Healthy)
-   - 🌾 **Wheat** (Septoria, Stripe Rust, Brown Rust, Healthy)
+   - 🌾 **Wheat** (Brown Rust, Yellow / Stripe Rust, Septoria Leaf Blight, Powdery Mildew, Healthy)
 
 4. **Multi-Tiered Therapeutic Advisory:**
    - **Chemical Treatments:** Specific commercial active ingredients (e.g. Mancozeb, Azoxystrobin, Chlorothalonil) with precise application dosages (g/L or ml/L).
@@ -53,18 +55,21 @@ AgriVision is an intelligent agricultural crop health diagnosis and clinical adv
 ```
 Agrivision/
 ├── models/
-│   ├── general_crops.onnx       # SOTA model for Apple, Corn, Potato, Tomato, Pepper, Soybean
-│   ├── rice_model.onnx          # ResNet-50 model specialized for Rice
-│   ├── remaining_crops.onnx     # Deep ONNX model for Wheat, Cotton, Sugarcane, Onion, Rose, Chickpea
-│   └── remaining_classes.json   # Class labels mapping for remaining crops
+│   ├── general_crops.onnx                  # SOTA model for Apple, Corn, Potato, Tomato, Pepper, Soybean
+│   ├── rice_model.onnx                     # ResNet-50 model specialized for Rice
+│   ├── wheat_disease_binary_cnn_model.h5   # Trained Wheat CNN binary classifier
+│   ├── wheat_model.onnx                    # Fast ONNX runtime model for Wheat
+│   ├── specialist_heads.npz                # Calibrated specialist heads for Rose, Chickpea & Wheat
+│   ├── remaining_crops_with_features.onnx  # Feature extractor & classifier for Cotton, Sugarcane, Onion
+│   └── remaining_classes.json              # Class labels mapping
 ├── public/
-│   └── index.html               # Responsive web interface (Tailwind CSS, Lucide Icons)
-├── disease_info.json            # Clinical agricultural knowledge base (symptoms, remedies, chemical dosages)
-├── classes.json                 # Label registry
-├── inference.py                 # Strict multi-model ONNX inference engine
-├── server.js                    # Express.js REST API & AI advice server
-├── package.json                 # Node.js dependencies
-└── README.md                    # Project documentation
+│   └── index.html                          # Responsive web interface (Tailwind CSS, Lucide Icons)
+├── disease_info.json                       # Clinical agricultural knowledge base (symptoms, remedies, dosages)
+├── classes.json                            # Label registry
+├── inference.py                            # Strict multi-model diagnostic engine
+├── server.js                               # Express.js REST API & AI advice server
+├── package.json                            # Node.js dependencies
+└── README.md                               # Project documentation
 ```
 
 ---

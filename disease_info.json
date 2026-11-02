@@ -110,118 +110,6 @@
     ],
     "treatment": "Foliar health issue detected in Apple. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
   },
-  "5": {
-    "crop": "Chickpea",
-    "disease": "1 Hr",
-    "status": "Healthy",
-    "symptoms": [
-      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
-      "Turgid leaf vascular architecture with robust cell wall structure.",
-      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
-    ],
-    "organic_remedies": [
-      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
-      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
-    ],
-    "chemical_remedies": [
-      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
-      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
-    ],
-    "preventive_tips": [
-      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
-      "Practice balanced crop spacing to preserve airflow through canopy."
-    ],
-    "treatment": "Chickpea crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
-  },
-  "6": {
-    "crop": "Chickpea",
-    "disease": "3 R",
-    "status": "Healthy",
-    "symptoms": [
-      "Foliage displays deep, natural chlorophyll coloration without chlorotic flecks.",
-      "Turgid leaf vascular architecture with robust cell wall structure.",
-      "No necrotic lesions, fungal sporulation, or insect pest webbing detected."
-    ],
-    "organic_remedies": [
-      "Apply prophylactic cold-pressed Neem oil (3ml/L) monthly to maintain immunity.",
-      "Incorporate compost tea or beneficial mycorrhizal fungi to bolster root defenses."
-    ],
-    "chemical_remedies": [
-      "No synthetic fungicide required. Maintain standard NPK fertilizer schedule.",
-      "Periodic micro-nutrient foliar spray (Zinc, Boron, Magnesium) to boost vitality."
-    ],
-    "preventive_tips": [
-      "Maintain optimal field drainage and inspect foliage weekly during humid weather.",
-      "Practice balanced crop spacing to preserve airflow through canopy."
-    ],
-    "treatment": "Chickpea crop is healthy and vigorous. Maintain regular scouting, balanced watering, and standard soil fertilization."
-  },
-  "7": {
-    "crop": "Chickpea",
-    "disease": "5 Mr",
-    "status": "Diseased",
-    "symptoms": [
-      "Irregular foliar chlorosis and localized tissue discoloration.",
-      "Reduced photosynthetic vigor and abnormal leaf morphology."
-    ],
-    "organic_remedies": [
-      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
-      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
-    ],
-    "chemical_remedies": [
-      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
-      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
-    ],
-    "preventive_tips": [
-      "Conduct regular field scouting and maintain balanced plant nutrition.",
-      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
-    ],
-    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
-  },
-  "8": {
-    "crop": "Chickpea",
-    "disease": "7 S",
-    "status": "Diseased",
-    "symptoms": [
-      "Irregular foliar chlorosis and localized tissue discoloration.",
-      "Reduced photosynthetic vigor and abnormal leaf morphology."
-    ],
-    "organic_remedies": [
-      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
-      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
-    ],
-    "chemical_remedies": [
-      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
-      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
-    ],
-    "preventive_tips": [
-      "Conduct regular field scouting and maintain balanced plant nutrition.",
-      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
-    ],
-    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
-  },
-  "9": {
-    "crop": "Chickpea",
-    "disease": "9 Hs",
-    "status": "Diseased",
-    "symptoms": [
-      "Irregular foliar chlorosis and localized tissue discoloration.",
-      "Reduced photosynthetic vigor and abnormal leaf morphology."
-    ],
-    "organic_remedies": [
-      "Apply broad-spectrum bio-fungicide (Trichoderma viride @ 5g/L).",
-      "Foliar spray of cold-pressed Neem oil (5ml/L) with liquid soap surfactant."
-    ],
-    "chemical_remedies": [
-      "Apply protective contact fungicide Mancozeb 75 WP (2g/L).",
-      "Foliar spray of balanced micronutrient complex (Zinc, Iron, Boron)."
-    ],
-    "preventive_tips": [
-      "Conduct regular field scouting and maintain balanced plant nutrition.",
-      "Sanitize pruning tools between plants with 70% isopropyl alcohol."
-    ],
-    "treatment": "Foliar health issue detected in Chickpea. Apply protective Mancozeb (2g/L) or Neem oil and maintain clean irrigation."
-  },
   "10": {
     "crop": "Corn (Maize)",
     "disease": "Blight",
@@ -3169,5 +3057,212 @@
       "Avoid excessive early-season nitrogen top-dressing which fosters tender rust-prone tissue."
     ],
     "treatment": "Foliar rust infection detected. Immediately apply Propiconazole 25 EC (1ml/L) or Tebuconazole. Ensure field canopy airflow."
+  },
+  "139": {
+    "crop": "Rose",
+    "disease": "Black Spot",
+    "status": "Diseased",
+    "symptoms": [
+      "Circular black spots with feathery or fringed margins on the upper leaf surface.",
+      "Yellow halos forming around black spots, leading to premature defoliation.",
+      "Stems and canes developing raised reddish-purple to black blister lesions."
+    ],
+    "organic_remedies": [
+      "Spray cold-pressed Neem oil (5ml/L) emulsified with mild liquid soap every 7 days.",
+      "Apply Potassium Bicarbonate (3g/L) mixed with horticultural oil as a bio-fungicide."
+    ],
+    "chemical_remedies": [
+      "Spray Chlorothalonil 75 WP (2g/L) or Mancozeb 75 WP (2.5g/L) as protective barrier.",
+      "Apply systemic Triazole fungicide Myclobutanil 10 WP (1g/L) or Carbendazim (1g/L)."
+    ],
+    "preventive_tips": [
+      "Prune infected canes in early spring and burn or dispose of all fallen leaves.",
+      "Water roses at the base using drip irrigation; never wet foliage late in the evening."
+    ],
+    "treatment": "Rose Black Spot fungal infection detected. Spray Myclobutanil (1g/L) or Mancozeb (2.5g/L) and remove fallen infected leaves."
+  },
+  "140": {
+    "crop": "Rose",
+    "disease": "Powdery Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "White to grayish powdery fungal growth on young leaves, tender shoots, and buds.",
+      "Infected leaves curl, twist, become distorted, and turn purplish before dropping.",
+      "Unopened flower buds become coated with white mycelium and fail to open."
+    ],
+    "organic_remedies": [
+      "Spray Micronized Wettable Sulfur 80 WP (2g/L) during cool morning hours.",
+      "Apply diluted cow milk solution (1:9 with water) or baking soda (5g/L) spray."
+    ],
+    "chemical_remedies": [
+      "Apply systemic Penconazole 10 EC (0.5ml/L) or Hexaconazole 5 EC (1ml/L).",
+      "Spray Difenoconazole 25 EC (0.5ml/L) or Karathane 48 EC (1ml/L) at first symptom."
+    ],
+    "preventive_tips": [
+      "Ensure excellent air circulation around bushes by pruning overcrowded central canes.",
+      "Plant roses in open sunny locations receiving at least 6 hours of direct sunlight."
+    ],
+    "treatment": "Rose Powdery Mildew detected. Spray Wettable Sulfur (2g/L) or Hexaconazole (1ml/L) and improve bush ventilation."
+  },
+  "141": {
+    "crop": "Rose",
+    "disease": "Downy Mildew",
+    "status": "Diseased",
+    "symptoms": [
+      "Angular, purplish to dark red or brownish spots delimited by leaf veins.",
+      "Faint grayish-white downy fungal felting on the undersides of leaves in humid conditions.",
+      "Rapid severe defoliation starting from top canopies downwards within 48-72 hours."
+    ],
+    "organic_remedies": [
+      "Spray Copper Hydroxide (2g/L) or Bordeaux mixture (1%) as organic protective coat.",
+      "Improve air circulation and decrease relative humidity below 85%."
+    ],
+    "chemical_remedies": [
+      "Apply systemic Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ 2.5g/L).",
+      "Spray Dimethomorph 50 WP (1g/L) or Cymoxanil + Mancozeb (2g/L)."
+    ],
+    "preventive_tips": [
+      "Avoid overhead sprinkler watering, especially in greenhouses and polyhouses.",
+      "Maintain greenhouse heating and ventilation to prevent leaf condensation."
+    ],
+    "treatment": "Severe Rose Downy Mildew detected. Immediately spray Metalaxyl + Mancozeb (2.5g/L) and strictly control leaf wetness."
+  },
+  "142": {
+    "crop": "Rose",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Vibrant, deep green foliage with uniform glossy leaf cuticle.",
+      "No lesions, spotting, powdery coatings, or yellow chlorotic margins.",
+      "Vigorous stem growth with sturdy cane nodes and healthy bud development."
+    ],
+    "organic_remedies": [
+      "Apply well-decomposed farmyard manure or vermicompost around root drip line.",
+      "Maintain prophylactic fortnightly spray of Seaweed extract (2ml/L)."
+    ],
+    "chemical_remedies": [
+      "Apply balanced NPK 19-19-19 foliar spray (3g/L) every 15 days.",
+      "Ensure micronutrient availability with Zinc and Magnesium foliar supplement."
+    ],
+    "preventive_tips": [
+      "Maintain routine sanitation, sanitize pruning shears with 70% alcohol between cuts.",
+      "Provide adequate mulch to retain steady soil moisture and suppress weed competition."
+    ],
+    "treatment": "Rose crop is completely healthy and vigorous. Maintain regular scouting, balanced drip nutrition, and sanitation."
+  },
+  "143": {
+    "crop": "Chickpea",
+    "disease": "Ascochyta Blight",
+    "status": "Diseased",
+    "symptoms": [
+      "Circular to oval concentric lesions on leaflets, petioles, pods, and stems.",
+      "Minute dark brown to black fruiting bodies (pycnidia) arranged in concentric rings within spots.",
+      "Stem breakage at lesion sites and brown sunken ring lesions girdling branch nodes."
+    ],
+    "organic_remedies": [
+      "Seed treatment with bio-agent Trichoderma harzianum (10g/kg seed).",
+      "Spray Pseudomonas fluorescens culture (5ml/L) at vegetative onset."
+    ],
+    "chemical_remedies": [
+      "Foliar spray with Chlorothalonil 75 WP (Kavach 2g/L) or Mancozeb 75 WP (2.5g/L).",
+      "Apply Azoxystrobin 18.2% + Difenoconazole 11.4% SC (Amistar Top 1ml/L)."
+    ],
+    "preventive_tips": [
+      "Use certified disease-free seeds and adopt 3-year crop rotation with non-host cereals.",
+      "Avoid high-density canopy planting; maintain 30cm row-to-row spacing."
+    ],
+    "treatment": "Chickpea Ascochyta Blight detected. Spray Mancozeb 75 WP (2.5g/L) or Chlorothalonil (2g/L) immediately to stop canopy spread."
+  },
+  "144": {
+    "crop": "Chickpea",
+    "disease": "Fusarium Wilt",
+    "status": "Diseased",
+    "symptoms": [
+      "Drooping of petioles and rachis followed by general foliar yellowing and flaccidity.",
+      "Dark brown to black internal vascular discoloration visible upon splitting taproot longitudinally.",
+      "Premature death and drying of individual branches or entire plant while leaves remain attached."
+    ],
+    "organic_remedies": [
+      "Soil incorporation of Trichoderma viride enriched farmyard manure (2.5 kg/acre).",
+      "Apply Neem cake (200 kg/ha) at field bed preparation."
+    ],
+    "chemical_remedies": [
+      "Seed treatment with Carbendazim 50 WP (2g/kg seed) + Thiram 75 WP (2g/kg seed).",
+      "Spot drenching around wilt-affected patches with Carbendazim 50 WP (1g/L)."
+    ],
+    "preventive_tips": [
+      "Sow wilt-resistant varieties (e.g., JG-315, Vishal, Vijay, KWR-108).",
+      "Avoid deep sowing in heavy soils and implement deep summer ploughing."
+    ],
+    "treatment": "Chickpea Fusarium Wilt detected. Soil drench with Carbendazim (1g/L) or apply Trichoderma bio-inoculant to stem root-zone."
+  },
+  "145": {
+    "crop": "Chickpea",
+    "disease": "Collar Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Water-soaked dark brownish lesions on seedling collar region near ground soil surface.",
+      "Collar tissue softens and rots, covered with white fan-like fungal mycelial threads.",
+      "Mustard-seed-like brown sclerotial bodies visible at soil-stem interface."
+    ],
+    "organic_remedies": [
+      "Seed coating with Trichoderma harzianum (10g/kg seed).",
+      "Ensure raised-bed cultivation to prevent water accumulation near collar stem."
+    ],
+    "chemical_remedies": [
+      "Seed treatment with Carboxin 37.5% + Thiram 37.5% DS (Vitavax Power 2.5g/kg).",
+      "Soil drenching around collar zone with Copper Oxychloride 50 WP (2.5g/L)."
+    ],
+    "preventive_tips": [
+      "Avoid sowing in undecomposed crop residue which provides substrate for Sclerotium.",
+      "Ensure effective soil drainage and prevent surface compaction."
+    ],
+    "treatment": "Chickpea Collar Rot detected. Soil drench root collar with Copper Oxychloride 50 WP (2.5g/L) and improve bed drainage."
+  },
+  "146": {
+    "crop": "Chickpea",
+    "disease": "Dry Root Rot",
+    "status": "Diseased",
+    "symptoms": [
+      "Sudden drooping of top leaves in hot, dry conditions during flowering/podding stage.",
+      "Taproot becomes brittle, black, dry, and devoid of secondary and tertiary lateral roots.",
+      "Bark of the root shreds easily, showing minute black sclerotial dots under root bark."
+    ],
+    "organic_remedies": [
+      "Soil application of Trichoderma viride culture mixed with compost.",
+      "Maintain optimum soil moisture via light irrigations to mitigate moisture stress."
+    ],
+    "chemical_remedies": [
+      "Seed dressing with Carbendazim + Thiram (1:1 at 3g/kg seed).",
+      "Drench root zone with Thiophanate Methyl 70 WP (Roko 1.5g/L)."
+    ],
+    "preventive_tips": [
+      "Provide light irrigation during pod fill stage to prevent soil cracking and heat stress.",
+      "Intercrop with sorghum or pearl millet to maintain soil micro-environment."
+    ],
+    "treatment": "Chickpea Dry Root Rot detected. Provide light soil moisture irrigation and drench with Thiophanate Methyl 70 WP (1.5g/L)."
+  },
+  "147": {
+    "crop": "Chickpea",
+    "disease": "Healthy",
+    "status": "Healthy",
+    "symptoms": [
+      "Lush green pinnate leaflets with uniform vigor and active glandular hairs.",
+      "No lesions, vascular discoloration, root rot, or necrotic spots.",
+      "Vigorous taproot with abundant pink active Rhizobium nitrogen-fixing nodules."
+    ],
+    "organic_remedies": [
+      "Inoculate seeds with Rhizobium and PSB bio-fertilizer cultures.",
+      "Spray Panchagavya (3%) or Seaweed extract during pre-flowering stage."
+    ],
+    "chemical_remedies": [
+      "Foliar spray of 2% Urea or 2% DAP at 50% flowering to enhance pod fill.",
+      "Apply micronutrient spray containing Boron (1g/L) for pollen viability."
+    ],
+    "preventive_tips": [
+      "Monitor field regularly for early signs of Helicoverpa pod borer and foliar fungi.",
+      "Maintain weed-free conditions during the first 45 days after sowing."
+    ],
+    "treatment": "Chickpea crop is completely healthy. Continue balanced phosphorus fertilization, light irrigation, and regular field scouting."
   }
 }
