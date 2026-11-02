@@ -375,35 +375,89 @@ class StrictMultiModelDetector:
                 for idx, p in zip(matched_indices, sub_probs):
                     candidates.append((self.remaining_classes[idx], float(p)))
 
-        # --- F. REMAINING CROPS (Cotton, Sugarcane, Onion) ---
-        elif crop_clean in {"cotton", "sugarcane", "sugar", "cane", "onion"}:
-            if not self.remaining_session:
-                raise RuntimeError("Remaining crops model not loaded.")
-            model_used = "Remaining Crops Specialist (models/remaining_crops.onnx)"
-            tensor = preprocess_nchw(img)
-            inp_name = self.remaining_session.get_inputs()[0].name
-            out = self.remaining_session.run(None, {inp_name: tensor})
-            logits = out[0][0]
+        # --- F. COTTON SPECIALIST ---
+        elif crop_clean in {"cotton"}:
+            model_used = "Cotton Specialist Diagnostic Engine (Calibrated 1280-d Feature Head)"
+            if self.specialist_heads and "cotton_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["cotton_mean"]
+                scale = self.specialist_heads["cotton_scale"]
+                coef = self.specialist_heads["cotton_coef"]
+                intercept = self.specialist_heads["cotton_intercept"]
+                classes = self.specialist_heads["cotton_classes"]
 
-            matched_indices = []
-            for idx, lbl in self.remaining_classes.items():
-                lbl_lower = lbl.lower()
-                if lbl_lower.startswith(crop_clean + "___"):
-                    matched_indices.append(idx)
-                elif crop_clean in ["sugarcane", "sugar", "cane"] and lbl_lower.startswith("sugarcane___"):
-                    matched_indices.append(idx)
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
 
-            if not matched_indices:
-                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if crop_clean in lbl.lower()]
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "cotton" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
 
-            if not matched_indices:
-                matched_indices = list(self.remaining_classes.keys())[:4]
+        # --- G. ONION SPECIALIST ---
+        elif crop_clean in {"onion"}:
+            model_used = "Onion Specialist Diagnostic Engine (Calibrated 1280-d Feature Head)"
+            if self.specialist_heads and "onion_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["onion_mean"]
+                scale = self.specialist_heads["onion_scale"]
+                coef = self.specialist_heads["onion_coef"]
+                intercept = self.specialist_heads["onion_intercept"]
+                classes = self.specialist_heads["onion_classes"]
 
-            sub_logits = np.array([logits[i] for i in matched_indices])
-            sub_probs = softmax(sub_logits)
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
 
-            for idx, p in zip(matched_indices, sub_probs):
-                candidates.append((self.remaining_classes[idx], float(p)))
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "onion" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
+
+        # --- H. SUGARCANE SPECIALIST ---
+        elif crop_clean in {"sugarcane", "sugar", "cane"}:
+            model_used = "Sugarcane Specialist Diagnostic Engine (Calibrated 1280-d Feature Head)"
+            if self.specialist_heads and "sugarcane_classes" in self.specialist_heads:
+                feat = self.extract_features(img)
+                mean = self.specialist_heads["sugarcane_mean"]
+                scale = self.specialist_heads["sugarcane_scale"]
+                coef = self.specialist_heads["sugarcane_coef"]
+                intercept = self.specialist_heads["sugarcane_intercept"]
+                classes = self.specialist_heads["sugarcane_classes"]
+
+                scaled = (feat - mean) / scale
+                logits = np.dot(scaled, coef.T) + intercept
+                probs = softmax(logits)
+
+                for cls_name, prob in zip(classes, probs):
+                    candidates.append((str(cls_name), float(prob)))
+            else:
+                tensor = preprocess_nchw(img)
+                inp_name = self.remaining_session.get_inputs()[0].name
+                out = self.remaining_session.run(None, {inp_name: tensor})
+                logits = out[0][0]
+                matched_indices = [idx for idx, lbl in self.remaining_classes.items() if "sugarcane" in lbl.lower()]
+                sub_logits = np.array([logits[i] for i in matched_indices])
+                sub_probs = softmax(sub_logits)
+                for idx, p in zip(matched_indices, sub_probs):
+                    candidates.append((self.remaining_classes[idx], float(p)))
 
         # --- G. FALLBACK ---
         else:
